@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biserica Ucraineană Muntele Sionului</title>
     <link rel="icon" href="./Images/LOGO BUMS - 1.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kristi&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <section id="main">
+    <section id="front-page">
       <div
         class="w-full h-[100vh] bg-cover bg-center brightness-50"
         style="background-image: url(./Images/mountains-1.jpg)"
@@ -17,21 +23,31 @@
         class="navbar w-full"
         style="background-color: rgba(12, 58, 77, 0.8)"
       >
-        <div class="w-full flex justify-around sm:justify-start">
-          <ul class="flex gap-4 text-slate-300 text-base font-semibold">
-            <li class="p-3 cursor-pointer hover:bg-[#225e77]">
-              <a href="">Acasa</a>
-            </li>
-            <li class="p-3 cursor-pointer hover:bg-[#225e77]">
-              <a href="">Despre Noi</a>
-            </li>
-            <li class="p-3 cursor-pointer hover:bg-[#225e77]">
-              <a href="">Galerie</a>
-            </li>
-            <li class="p-3 cursor-pointer hover:bg-[#225e77]">
-              <a href="">Contact</a>
-            </li>
-          </ul>
+        <div
+          class="navbar w-full"
+          style="background-color: rgba(12, 58, 77, 0.8)"
+        >
+          <div class="flex justify-between px-4">
+            <img src="./Images/LOGO BUMS  - 4.png" class="w-[200px] m-2" />
+            <div class="container justify-end flex items-center">
+              <div class="flex-col justify-center">
+                <ul class="gap-4 flex text-slate-300 text-base font-semibold">
+                  <li class="p-3 cursor-pointer hover:bg-[#225e77]">
+                    <a href="#front-page">Acasa</a>
+                  </li>
+                  <li class="p-3 cursor-pointer hover:bg-[#225e77]">
+                    <a href="#team">Despre Noi</a>
+                  </li>
+                  <li class="p-3 cursor-pointer hover:bg-[#225e77]">
+                    <a href="">Galerie</a>
+                  </li>
+                  <li class="p-3 cursor-pointer hover:bg-[#225e77]">
+                    <a href="">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="text-main w-full">
@@ -47,24 +63,141 @@
             <h1
               class="lg:text-5xl sm:text-3xl text-4xl text-slate-300 font-bold text-center px-5 tracking-tight"
             >
-              Ласкаво просимо до церкви Гора Сіон !
+              Dumnezeu sa te binecuvanteze.
             </h1>
+            <div class="flex justify-center align-middle mt-5">
+              <button
+                class="live-btn px-4 py-2 rounded-3xl text-center text-slate-300 text-base font-semibold bg-[#CD201F]"
+              >
+                <a
+                  href="https://www.youtube.com/@bisericaucraineanamunteles9760"
+                  >Vezi live aici
+                </a>
+              </button>
+            </div>
+
+            <!-- Text in UKRAIN -->
+            <!-- <h1
+              class="lg:text-5xl sm:text-3xl text-4xl text-slate-300 font-bold text-center px-5 tracking-tight"
+            >
+              Ласкаво просимо до церкви Гора Сіон !
+            </h1> -->
           </div>
         </div>
-        <!-- <div class="flex justify-center">
-          <div class="flex justify-center lg:w-[90%]">
-            <h1 class="lg:text-6xl text-3xl text-slate-300 font-bold">
-              Bine ai venit la Biserica Muntele Sionului !
-            </h1>
-          </div>
-        </div> -->
       </div>
-
-      <!-- FIXED LOGO -->
-      <!-- <div class="fixed-logo bg-cover bg-center">
-        <img src="./Images/LOGO BUMS - 1.png" alt="" />
-      </div> -->
     </section>
+
+    <section id="team" class="bg-[#ecf0f1]">
+      <div class="w-full lg:container mx-auto">
+        <div
+          class="py-[100px] flex flex-col w-full justify-center items-center"
+        >
+          <h2 class="kristi-regular lg:text-8xl sm:text-7xl text-6xl mb-[50px]">
+            Pastorii Biserici
+          </h2>
+          <div
+            class="flex flex-col lg:flex-row w-full justify-between mt-8 space-y-4 lg:space-y-0 lg:space-x-4"
+          >
+            <div
+              class="flex w-full lg:w-[49%] justify-center lg:justify-end p-5"
+            >
+              <div class="flex flex-col">
+                <div
+                  class="rounded w-[286px] h-[286px] bg-[url('./Images/mitu.png')] bg-cover"
+                ></div>
+                <h3 class="text-center font-semibold text-2xl mt-5">
+                  Mitu Onciu
+                </h3>
+                <h3 class="text-center font-extralight text-xl mt-5 opacity-75">
+                  Pastor
+                </h3>
+              </div>
+            </div>
+
+            <div
+              class="flex w-full lg:w-[49%] justify-center lg:justify-start items-center"
+            >
+              <div class="flex flex-col p-5">
+                <div
+                  class="rounded w-[286px] h-[286px] bg-[url('./Images/mitu.png')] bg-cover"
+                ></div>
+                <h3 class="text-center font-semibold text-2xl mt-5">
+                  Viorel Cotu
+                </h3>
+                <h3 class="text-center font-extralight text-xl mt-5 opacity-75">
+                  Pastor
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="our-beliefs"
+      class="bg-[#ecf0f1] w-full flex items-center justify-center"
+    >
+      <div class="container mx-1 pb-[100px]">
+        <div class="flex flex-col">
+          <!-- <h2
+            class="kristi-regular text-center text-6xl sm:text-7xl lg:text-8xl mb-12"
+          >
+            Ce credem noi ?
+          </h2> -->
+          <h3 class="kristi-regular text-5xl">Noi credem :</h3>
+
+          <div class="border-2 border-[#225e77] my-5 p-5">
+            <h4 class="text-lg pb-5 font-semibold">1. Biblia</h4>
+            <p class="text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              ullamcorper dictum nunc non dapibus. Integer dictum, felis sit
+              amet pellentesque aliquet, diam quam rhoncus tellus, sit amet
+              facilisis dui sapien ac nulla. Ut semper tincidunt eleifend. In
+              sed felis ut dolor ultrices congue. Duis rutrum rhoncus elit non
+              gravida. Vivamus convallis interdum elementum. Curabitur porttitor
+              nisl at scelerisque varius. Aliquam ut vestibulum ligula, in
+              consequat magna. Pellentesque habitant morbi tristique senectus et
+              netus et malesuada fames ac turpis egestas. Aliquam ac maximus
+              tortor, at dapibus nunc.
+            </p>
+            <h4 class="text-lg py-5 font-semibold">2. Dumnezeu</h4>
+            <p class="text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              ullamcorper dictum nunc non dapibus. Integer dictum, felis sit
+              amet pellentesque aliquet, diam quam rhoncus tellus, sit amet
+              facilisis dui sapien ac nulla. Ut semper tincidunt eleifend. In
+              sed felis ut dolor ultrices congue. Duis rutrum rhoncus elit non
+              gravida. Vivamus convallis interdum elementum. Curabitur porttitor
+              nisl at scelerisque varius. Aliquam ut vestibulum ligula, in
+              consequat magna. Pellentesque habitant morbi tristique senectus et
+              netus et malesuada fames ac turpis egestas. Aliquam ac maximus
+              tortor, at dapibus nunc.
+            </p>
+            <h4 class="text-lg py-5 font-semibold">3. Biserica</h4>
+            <p class="text-sm sm:text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              ullamcorper dictum nunc non dapibus. Integer dictum, felis sit
+              amet pellentesque aliquet, diam quam rhoncus tellus, sit amet
+              facilisis dui sapien ac nulla. Ut semper tincidunt eleifend. In
+              sed felis ut dolor ultrices congue. Duis rutrum rhoncus elit non
+              gravida. Vivamus convallis interdum elementum. Curabitur porttitor
+              nisl at scelerisque varius. Aliquam ut vestibulum ligula, in
+              consequat magna. Pellentesque habitant morbi tristique senectus et
+              netus et malesuada fames ac turpis egestas. Aliquam ac maximus
+              tortor, at dapibus nunc.
+            </p>
+            <!-- Repeat content as necessary -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="w-full h-[40vh]">
+      <div
+        class="w-full h-full bg-[url('./Images/bible.jpg')] bg-cover bg-bottom"
+      ></div>
+    </section> -->
 
     <script src="index.js"></script>
   </body>
