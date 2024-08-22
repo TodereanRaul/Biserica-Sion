@@ -635,6 +635,10 @@ video {
   margin-top: 2rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -748,20 +752,16 @@ video {
   background-size: cover;
 }
 
-.bg-contain {
-  background-size: contain;
+.bg-bottom {
+  background-position: bottom;
 }
 
 .bg-center {
   background-position: center;
 }
 
-.bg-bottom {
-  background-position: bottom;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
+.fill-slate-300 {
+  fill: #cbd5e1;
 }
 
 .p-3 {
@@ -795,11 +795,6 @@ video {
 .py-\[100px\] {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.px-\[100px\] {
-  padding-left: 100px;
-  padding-right: 100px;
 }
 
 .pb-5 {
@@ -883,9 +878,19 @@ video {
   opacity: 0.75;
 }
 
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .brightness-50 {
   --tw-brightness: brightness(.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition {
@@ -951,9 +956,58 @@ a {
   opacity: 1;
 }
 
-/* .img {
-  border-radius: 50%;
-} */
+/* MOBIL MENU */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  padding: 20px 50px;
+  z-index: 999;
+  background-color: rgba(12, 58, 77);
+  -webkit-backdrop-filter: blur(20%);
+          backdrop-filter: blur(20%);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
+/* MENU BTN SHOW */
+
+.menu-btn {
+  display: none;
+}
+
+/* CLOSE BTN */
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 800px) {
+  .hideElements {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .sidebar {
+    width: 100%;
+    transition: 0.75s ease-out;
+  }
+}
 
 @media (min-width: 1024px) {
   .lg\:container {

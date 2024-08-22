@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <section id="front-page">
+    <section id="acasa">
       <div
         class="w-full h-[100vh] bg-cover bg-center brightness-50"
         style="background-image: url(./Images/mountains-1.jpg)"
@@ -32,11 +32,107 @@
             <div class="container justify-end flex items-center">
               <div class="flex-col justify-center">
                 <ul class="gap-4 flex text-slate-300 text-base font-semibold">
+                  <li
+                    class="p-3 cursor-pointer hover:bg-[#225e77] hideElements"
+                  >
+                    <a href="#acasa">Acasa</a>
+                  </li>
+                  <li
+                    class="p-3 cursor-pointer hover:bg-[#225e77] hideElements"
+                  >
+                    <a href="#despre-noi">Despre Noi</a>
+                  </li>
+                  <li
+                    class="p-3 cursor-pointer hover:bg-[#225e77] hideElements"
+                  >
+                    <a href="">Galerie</a>
+                  </li>
+                  <li
+                    class="p-3 cursor-pointer hover:bg-[#225e77] hideElements"
+                  >
+                    <a href="">Contact</a>
+                  </li>
+
+                  <button
+                    class="p-3 cursor-pointer hover:bg-[#225e77] menu-btn"
+                    onclick="showSidebar()"
+                  >
+                    <svg
+                      id="Menu--Streamline-Carbon.svg"
+                      class="fill-slate-300"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="-0.5 -0.5 16 16"
+                      height="26"
+                      width="26"
+                    >
+                      <desc>
+                        Menu Streamline Icon: https://streamlinehq.com
+                      </desc>
+                      <defs></defs>
+                      <title>menu</title>
+                      <path
+                        d="M1.875 2.8125h11.25v0.9375H1.875Z"
+                        stroke-width="1"
+                      ></path>
+                      <path
+                        d="M1.875 11.25h11.25v0.9375H1.875Z"
+                        stroke-width="1"
+                      ></path>
+                      <path
+                        d="M1.875 5.625h11.25v0.9375H1.875Z"
+                        stroke-width="1"
+                      ></path>
+                      <path
+                        d="M1.875 8.4375h11.25v0.9375H1.875Z"
+                        stroke-width="1"
+                      ></path>
+                      <path
+                        id="_Transparent_Rectangle_"
+                        d="M0 0h15v15H0Z"
+                        fill="none"
+                        stroke-width="1"
+                      ></path>
+                    </svg>
+                  </button>
+                </ul>
+              </div>
+
+              <!-- Menu for Mobil -->
+              <div class="sidebar">
+                <button
+                  class="p-3 cursor-pointer close-btn hover:bg-[#225e77]"
+                  onclick="hideSidebar()"
+                >
+                  <svg
+                    id="Close--Streamline-Carbon.svg"
+                    class="fill-slate-300"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="-0.5 -0.5 16 16"
+                    height="26"
+                    width="26"
+                  >
+                    <desc>Close Streamline Icon: https://streamlinehq.com</desc>
+                    <defs></defs>
+                    <path
+                      d="M8.162859375 7.5 11.25 4.412859375 10.587140625 3.75 7.5 6.837140625 4.4129531250000005 3.75 3.75 4.412859375 6.837140625 7.5 3.75 10.587140625 4.4129531250000005 11.25 7.5 8.162859375 10.587140625 11.25 11.25 10.587140625 8.162859375 7.5z"
+                      stroke-width="1"
+                    ></path>
+                    <g id="_Transparent_Rectangle_">
+                      <path
+                        d="M0 0h15v15H0Z"
+                        fill="none"
+                        stroke-width="1"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+
+                <ul class="gap-4 text-slate-300 text-base font-semibold">
                   <li class="p-3 cursor-pointer hover:bg-[#225e77]">
-                    <a href="#front-page">Acasa</a>
+                    <a href="#acasa">Acasa</a>
                   </li>
                   <li class="p-3 cursor-pointer hover:bg-[#225e77]">
-                    <a href="#team">Despre Noi</a>
+                    <a href="#despre-noi">Despre Noi</a>
                   </li>
                   <li class="p-3 cursor-pointer hover:bg-[#225e77]">
                     <a href="">Galerie</a>
@@ -87,7 +183,7 @@
       </div>
     </section>
 
-    <section id="team" class="bg-[#ecf0f1]">
+    <section id="despre-noi" class="bg-[#ecf0f1]">
       <div class="w-full lg:container mx-auto">
         <div
           class="py-[100px] flex flex-col w-full justify-center items-center"
