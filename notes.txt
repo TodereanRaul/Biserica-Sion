@@ -4,3 +4,8 @@ colors:
 nav : rgba(12, 58, 77, 0.8)
 hover nav : #225e77
 white texte : text-slate-300
+
+
+
+
+
