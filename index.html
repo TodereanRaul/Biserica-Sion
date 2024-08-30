@@ -16,43 +16,79 @@
   <body>
     <div id="preloader"></div>
     <section id="acasa">
-      <div id="content" class="main">
-        <video src="./Images/moving-fog.mp4" autoplay loop muted></video>
-        <div class="content">
-          <img
+      <div id="content" class="main relative">
+        <!-- Background image with opacity -->
+        <img
+          src="./Images/biserica-inside.jpg"
+          alt=""
+          class="w-full h-screen object-cover"
+        />
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <!-- Content on top of the image -->
+        <div
+          class="flex flex-col content absolute inset-0 items-center justify-center"
+        >
+          <h1
+            class="text-white text-4xl md:text-6xl lg:text-7xl font-bold text-center"
+          >
+            Biserica crestina Ucraineană
+          </h1>
+          <p class="text-white w-[80%] sm:40% lg:w-[35%] text-center mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button
+            class="mt-5 py-2 px-5 rounded-md font-semibold bg-transparent text-white border-2 border-[#f39c12] hover:bg-[#f39c12]"
+          >
+            <a href="">Programul biserici</a>
+          </button>
+          <!-- <img
             class="lg:w-[60%] w-[80%]"
             src="./Images/Logo ombré Biserica Ucraineana.png"
             alt="Biserica Ucraineană Muntele Sionului"
-          />
+          /> -->
         </div>
       </div>
 
-      <div class="navbar w-full" style="background-color: rgba(0, 0, 0, 0.5)">
+      <div
+        class="navbar w-full px-5"
+        style="background-color: rgba(0, 0, 0, 0.5)"
+      >
         <div class="flex justify-between">
-          <img src="./Images/LOGO BUMS  - 4.png" class="w-[200px] m-2" />
+          <img src="./Images/LOGO BUMS  - 4.png" class="w-[300px] m-2" />
           <div class="container justify-end flex items-center">
             <div class="flex-col justify-center">
-              <ul class="flex text-slate-300 text-base font-semibold">
-                <li class="p-3 cursor-pointer hover:bg-[#225e77] hideElements">
+              <ul class="flex text-slate-200 text-base font-semibold gap-3">
+                <li
+                  class="p-3 cursor-pointer hover:text-[#e72929] hideElements"
+                >
                   <a href="#acasa">Acasa</a>
                 </li>
-                <li class="p-3 cursor-pointer hover:bg-[#225e77] hideElements">
-                  <a href="#despre-noi">Despre Noi</a>
+                <li
+                  class="p-3 cursor-pointer hover:text-[#e72929] hideElements"
+                >
+                  <a href="./about.html">Despre Noi</a>
                 </li>
-                <li class="p-3 cursor-pointer hover:bg-[#225e77] hideElements">
+                <li
+                  class="p-3 cursor-pointer hover:text-[#e72929] hideElements"
+                >
                   <a href="">Galerie</a>
                 </li>
-                <li class="p-3 cursor-pointer hover:bg-[#225e77] hideElements">
+                <li
+                  class="p-3 cursor-pointer hover:text-[#e72929] hideElements"
+                >
                   <a href="">Contact</a>
                 </li>
                 <li
-                  class="p-3 cursor-pointe live-btn hideElements"
+                  class="p-3 cursor-pointer live-btn hideElements rounded-md"
                   style="background-color: #e72929"
                 >
                   <a
                     href="https://www.youtube.com/@bisericaucraineanamunteles9760"
-                    >Vezi Live Aici</a
                   >
+                    Live
+                  </a>
                 </li>
 
                 <button
@@ -122,17 +158,17 @@
                 </svg>
               </button>
 
-              <ul class="gap-4 text-slate-300 text-base font-semibold">
-                <li class="p-3 cursor-pointer hover:bg-[#225e77]">
+              <ul class="gap-4 text-slate-200 text-base font-semibold">
+                <li class="p-3 cursor-pointer hover:text-[#e72929]">
                   <a href="#acasa">Acasa</a>
                 </li>
-                <li class="p-3 cursor-pointer hover:bg-[#225e77]">
+                <li class="p-3 cursor-pointer hover:text-[#e72929]">
                   <a href="#despre-noi">Despre Noi</a>
                 </li>
-                <li class="p-3 cursor-pointer hover:bg-[#225e77]">
+                <li class="p-3 cursor-pointer hover:text-[#e72929]">
                   <a href="">Galerie</a>
                 </li>
-                <li class="p-3 cursor-pointer hover:bg-[#225e77]">
+                <li class="p-3 cursor-pointer hover:text-[#e72929]">
                   <a href="">Contact</a>
                 </li>
                 <li
@@ -151,13 +187,13 @@
       </div>
     </section>
 
-    <section id="despre-noi" class="bg-[#ecf0f1]">
+    <section id="despre-noi" class="">
       <div class="w-full lg:container mx-auto">
         <div
-          class="py-[100px] flex flex-col w-full justify-center items-center"
+          class="pt-[100px] pb-[50px] flex flex-col w-full justify-center items-center"
         >
           <h2 class="kristi-regular md:text-8xl sm:text-7xl text-6xl mb-[50px]">
-            Pastorii Bisericii
+            Conducerea Bisericii
           </h2>
           <div class="grid grid-cols-1 sm:grid-cols-3 md:gap-10 lg:gap-20">
             <div class="w-[200px] h-[360px]">
@@ -192,20 +228,136 @@
       </div>
     </section>
 
-    <section
-      id="our-beliefs"
-      class="bg-[#ecf0f1] w-full flex items-center justify-center"
-    >
-      <div class="container mx-1 pb-[100px]">
-        <div class="flex flex-col">
-          <!-- <h2
-            class="kristi-regular text-center text-6xl sm:text-7xl lg:text-8xl mb-12"
-          >
-            Ce credem noi ?
-          </h2> -->
-          <h3 class="kristi-regular text-5xl">Noi credem :</h3>
+    <section id="lideri-tineri" class="py-12">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-10"
+      >
+        <div class="flex flex-col items-center">
+          <div class="text-center md:text-left">
+            <h3
+              class="kristi-regular text-4xl md:text-5xl lg:text-6xl pt-6 md:pt-10"
+            >
+              Lideri de Tineri - Slujire
+            </h3>
+            <p class="italic text-lg md:text-2xl mt-4 md:mt-10">
+              „Nimeni să nu-ți disprețuiască tinerețea, ci
+              <span class="text-[#f39c12]"
+                >fii o pildă pentru credincioși:</span
+              >
+              în vorbire, în purtare, în dragoste, în credință, în curăție.”
+              <span class="text-base md:text-xl not-italic">
+                1 Timotei 4:12</span
+              >
+            </p>
+            <p class="italic text-lg md:text-2xl mt-4 md:mt-6">
+              „Căci Dumnezeu nu este nedrept ca să uite osteneala voastră şi
+              dragostea pe care aţi arătat-o pentru Numele Lui, voi care
+              <span class="text-[#f39c12]"
+                >aţi slujit şi slujiţi sfinţilor.</span
+              >”<span class="text-base md:text-xl not-italic"> Evrei 6:10</span>
+            </p>
+          </div>
+          <div class="flex flex-col w-full mt-6">
+            <button
+              class="w-[200px] mt-5 py-2 px-5 rounded-md font-semibold text-white bg-[#f39c12] border-2 border-[#f39c12] hover:text-black hover:bg-[white]"
+            >
+              <a href="">Implicate si tu !</a>
+            </button>
+            <div
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/media_team.jpg')] bg-cover rounded-lg mt-4 md:mt-6"
+            ></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex flex-col justify-center gap-4">
+            <div
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/lider1.jpg')] bg-cover bg-center rounded-lg"
+            ></div>
+          </div>
+          <div class="flex flex-col justify-center gap-4">
+            <div
+              class="w-full h-[150px] md:h-[200px] bg-[url('./Images/lider2.jpg')] bg-cover bg-center rounded-lg"
+            ></div>
+            <div
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/lider4.jpg')] bg-cover bg-center rounded-lg"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="border-2 border-[#225e77] my-5 p-5">
+    <section
+      id="program"
+      class="py-12 bg-[url('./Images/mountains-2.jpg')] bg-fixed bg-cover"
+    >
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3">
+        <div class="px-5">
+          <h3
+            class="kristi-regular text-white font-semibold text-5xl md:text-6xl w-full text-center mb-10"
+          >
+            Programul bisercii
+          </h3>
+        </div>
+        <div class="flex flex-col px-5 text-white lg:w-[320px]">
+          <div class="flex flex-col">
+            <p class="font-bold text-2xl">Luni</p>
+            <p class="mt-1 font-semibold">
+              <span class="text-[#f39c12]">20:00 - 22:00</span> | Repetitii
+            </p>
+          </div>
+          <div class="flex flex-col mt-5">
+            <p class="font-bold text-2xl">Marti</p>
+            <p class="mt-1 font-semibold">
+              <span class="text-[#f39c12]">20:00 - 22:00</span> | Rugaciune
+            </p>
+          </div>
+          <div class="flex flex-col mt-5">
+            <p class="font-bold text-2xl">Miercuri</p>
+            <p class="mt-1 font-semibold">
+              <span class="text-[#f39c12]">20:00 - 22:00</span> | Serviciu divin
+            </p>
+          </div>
+          <div class="flex flex-col mt-5">
+            <p class="font-bold text-2xl">Joi</p>
+            <p class="mt-1 font-semibold">
+              <span class="text-[#f39c12]">20:00 - 22:00</span> | Seara de
+              tinerii
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col px-5 text-white lg:w-[320px] mt-5 md:mt-0">
+          <div class="flex flex-col">
+            <p class="font-bold text-2xl">Vineri</p>
+            <p class="mt-1 font-semibold">
+              <span class="text-[#f39c12]">10:00 - 12:00</span> | Zi de post
+            </p>
+            <p class="mt-1">
+              <span class="text-[#f39c12]">20:00 - 22:00</span> | Zi de post
+            </p>
+          </div>
+          <div class="flex flex-col mt-5">
+            <p class="font-bold text-2xl">Sambata</p>
+            <p class="mt-1 font-semibold">
+              <span class="text-[#f39c12]">20:00 - 22:00</span> | Repetitii
+            </p>
+          </div>
+          <div class="flex flex-col mt-5">
+            <p class="font-bold text-2xl">Duminica</p>
+            <p class="mt-1 font-semibold">
+              <span class="text-[#f39c12]">10:00 - 12:30</span> | Serviciu divin
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-beliefs" class="w-full">
+      <div
+        class="container mx-auto flex flex-col ps-3 lg:items-center justify-center"
+      >
+        <h3 class="kristi-regular text-5xl w-full md:w-1/2">Noi credem</h3>
+        <div class="flex justify-center w-full">
+          <div class="p-5 w-full lg:w-1/2 flex flex-col">
             <h4 class="text-lg pb-5 font-semibold">1. Biblia</h4>
             <p class="text-sm sm:text-base">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -251,11 +403,67 @@
       </div>
     </section>
 
-    <!-- <section class="w-full h-[40vh]">
-      <div
-        class="w-full h-full bg-[url('./Images/bible.jpg')] bg-cover bg-bottom"
-      ></div>
-    </section> -->
+    <section id="contact" class="py-12">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div class="p-5 flex items-center justify-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.0074160075396!2d4.3194031!3d50.8865731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3322ffb4c8f%3A0x3ecaab8ddb0c78f0!2sBiserica%20Muntele%20Sionului!5e0!3m2!1sen!2sbe!4v1725000311210!5m2!1sen!2sbe"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="py-5 flex flex-col justify-center items-start">
+            <div>
+              <h3 class="kristi-regular text-5xl w-full">
+                Vino sa te inchini lui Dumnezeu impreuna cu noi
+              </h3>
+              <p class="mt-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="mt-5">
+                <span class="font-semibold">Serviciu Divin :</span> Duminica ora
+                10:00 - 12:30
+              </p>
+              <p class="mt-3">Rue Remy Soetens 36, 1090 Jette</p>
+
+              <p class="text-[#f39c12] hover:font-semibold">
+                <a href="https://maps.app.goo.gl/hWLTwMUdBvv2mcS99"
+                  >Vezi pe harta</a
+                >
+              </p>
+              <p class="mt-5 text-[#f39c12] hover:font-semibold">
+                <a href="mailto:bisericaucmuntelesionului@gmail.com"
+                  >bisericaucmuntelesionului@gmail.com</a
+                >
+              </p>
+              <p class="mt-5">
+                <a
+                  href="https://www.youtube.com/@bisericaucraineanamunteles9760?si=znq6FVH0xNWXD9S6"
+                  ><svg
+                    class="w-8 fill-red-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                  >
+                    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+                    />
+                  </svg>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="index.js"></script>
   </body>
