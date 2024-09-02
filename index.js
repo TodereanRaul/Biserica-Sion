@@ -40,3 +40,13 @@ function hideSidebar() {
   const showBtn = document.querySelector(".menu-btn");
   showBtn.style.visibility = "visible";
 }
+
+// Navbar Scroll
+window.onscroll = function () {
+  var navbar = document.getElementById("navbar");
+  if (window.scrollY > 100) {
+    navbar.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // Change to your desired color
+  } else {
+    navbar.style.backgroundColor = "rgba(0, 0, 0, 0)"; // Initial transparent color
+  }
+};

@@ -8,23 +8,4 @@ white texte : text-slate-300
 orange: #f39c12
 
 
-<p class="text-xl ps-5 lg:ps-10">
-              Luni : ora 20 - 22
-              <span class="font-extralight">(repetitii)</span>
-            </p>
-            <p class="text-xl ps-5 lg:ps-10">Marti : ora 20 - 22 (rugaciune)</p>
-            <p class="text-xl ps-5 lg:ps-10">
-              Miercuri : ora 20 - 22 (serviciu divin)
-            </p>
-            <p class="text-xl ps-5 lg:ps-10">
-              Joi : ora 20 - 22 (seara de tineret)
-            </p>
-            <p class="text-xl ps-5 lg:ps-10">
-              Vineri : ora 10 - 12 / ora 20 - 22 (zi de post)
-            </p>
-            <p class="text-xl ps-5 lg:ps-10">
-              Sambata : ora 20 - 22 (repetitii)
-            </p>
-            <p class="text-xl ps-5 lg:ps-10">
-              Duminica : ora 10 - 12:30 (serviciu divin)
-            </p>
+
