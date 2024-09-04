@@ -830,6 +830,11 @@ video {
   border-color: rgb(243 156 18 / var(--tw-border-opacity));
 }
 
+.bg-\[\#F6F5F2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 245 242 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#f39c12\] {
   --tw-bg-opacity: 1;
   background-color: rgb(243 156 18 / var(--tw-bg-opacity));
@@ -846,11 +851,6 @@ video {
 
 .bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
-}
-
-.bg-\[\#F6F5F2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 245 242 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\/Images\/lider1\.jpg\'\)\] {
@@ -959,10 +959,6 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .text-center {
@@ -1459,6 +1455,10 @@ video {
 
   .lg\:w-\[35\%\] {
     width: 35%;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
   }
 
   .lg\:grid-cols-2 {
