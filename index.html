@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="./Images/LOGO BUMS - 1.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
@@ -59,11 +64,11 @@
           <div class="container justify-end flex items-center">
             <div class="flex-col justify-center">
               <div class="flex text-slate-200 text-base font-semibold gap-3">
-                <a
+                <!-- <a
                   class="p-3 cursor-pointer hover:text-[#f39c12] duration-300 hideElements"
                   href="#acasa"
                   >Acasă</a
-                >
+                > -->
 
                 <a
                   class="p-3 cursor-pointer hover:text-[#f39c12] hideElements duration-300"
@@ -71,11 +76,11 @@
                   >Crezul</a
                 >
 
-                <a
+                <!-- <a
                   class="p-3 cursor-pointer hover:text-[#f39c12] hideElements duration-300"
                   href=""
                   >Galerie</a
-                >
+                > -->
 
                 <a
                   class="p-3 cursor-pointer hover:text-[#f39c12] hideElements duration-300"
@@ -167,9 +172,9 @@
               <div
                 class="flex flex-col gap-4 text-slate-200 text-base font-semibold"
               >
-                <a class="p-3 cursor-pointer hover:text-[#f39c12]" href="#acasa"
+                <!-- <a class="p-3 cursor-pointer hover:text-[#f39c12]" href="#acasa"
                   >Acasă</a
-                >
+                > -->
 
                 <a
                   class="p-3 cursor-pointer hover:text-[#f39c12]"
@@ -177,9 +182,9 @@
                   >Crezul</a
                 >
 
-                <a class="p-3 cursor-pointer hover:text-[#f39c12]" href=""
+                <!-- <a class="p-3 cursor-pointer hover:text-[#f39c12]" href=""
                   >Galerie</a
-                >
+                > -->
 
                 <a
                   class="p-3 cursor-pointer hover:text-[#f39c12]"
@@ -227,7 +232,13 @@
               <h2 class="text-xl font-semibold text-center pt-2">
                 Toader Gorda
               </h2>
+
               <p class="text-lg font-light text-center">Pastor principal</p>
+              <p
+                class="text-normal font-light text-center hover:text-[#f39c12]"
+              >
+                <a href="tel:+380 50 912 6820">+380 50 912 6820</a>
+              </p>
             </div>
             <!--END ONE CARD WITH IMG AND TEXT PASTOR -->
             <div class="flex flex-col items-center">
@@ -244,7 +255,9 @@
                 Viorel Hiticaș Cotu
               </h2>
               <p class="text-lg font-light text-center">Pastor asistent</p>
-              <p class="text-normal font-light text-center hover:font-semibold">
+              <p
+                class="text-normal font-light text-center hover:text-[#f39c12]"
+              >
                 <a href="tel:+32466092940">+32 466 09 29 40</a>
               </p>
             </div>
@@ -263,7 +276,9 @@
                 Mitu Onciul
               </h2>
               <p class="text-lg font-light text-center">Pastor asistent</p>
-              <p class="text-normal font-light text-center hover:font-semibold">
+              <p
+                class="text-normal font-light text-center hover:text-[#f39c12]"
+              >
                 <a href="tel:+32484789252">+32 484 78 92 52</a>
               </p>
             </div>
@@ -278,70 +293,158 @@
     >
       <!-- Dark Overlay -->
       <div class="absolute inset-0 bg-black opacity-50"></div>
-      <div class="relative">
-        <div class="flex flex-col text-white">
-          <h2
-            class="kristi-regular font-semibold py-12 text-center text-6xl md:text-5xl lg:text-6xl"
+      <h2
+        class="relative text-white kristi-regular font-semibold py-12 text-center text-6xl md:text-5xl lg:text-6xl"
+      >
+        Ce credem noi?
+      </h2>
+      <!-- Slider main container -->
+      <!-- Swiper -->
+      <div class="swiper pb-12 relative">
+        <div class="swiper-wrapper">
+          <!-- First slide -->
+          <div
+            class="swiper-slide flex flex-col backdrop-blur-sm bg-white/30 p-5"
           >
-            Ce credem noi?
-          </h2>
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-12 px-5">
-            <!--START ONE CARD CREZUL -->
-            <div class="flex flex-col backdrop-blur-sm bg-white/30 p-5">
-              <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
-                # Biblia
-              </h4>
-              <p class="text-sm sm:text-base mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ullamcorper dictum nunc non dapibus. Integer dictum,
-                felis sit amet pellentesque aliquet, diam quam rhoncus tellus,
-                sit amet facilisis dui sapien ac nulla. Ut semper tincidunt
-                eleifend. In sed felis ut dolor ultrices congue. Duis rutrum
-                rhoncus elit non gravida. Vivamus convallis interdum elementum.
-                Curabitur porttitor nisl at scelerisque varius. Aliquam ut
-                vestibulum ligula, in consequat magna. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Aliquam ac maximus tortor, at dapibus nunc.
-              </p>
-            </div>
-            <!--END ONE CARD CREZUL -->
-
-            <div class="flex flex-col backdrop-blur-sm bg-white/30 p-5">
-              <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
-                # Dumnezeu
-              </h4>
-              <p class="text-sm sm:text-base mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ullamcorper dictum nunc non dapibus. Integer dictum,
-                felis sit amet pellentesque aliquet, diam quam rhoncus tellus,
-                sit amet facilisis dui sapien ac nulla. Ut semper tincidunt
-                eleifend. In sed felis ut dolor ultrices congue. Duis rutrum
-                rhoncus elit non gravida. Vivamus convallis interdum elementum.
-                Curabitur porttitor nisl at scelerisque varius. Aliquam ut
-                vestibulum ligula, in consequat magna. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Aliquam ac maximus tortor, at dapibus nunc.
-              </p>
-            </div>
-            <div class="flex flex-col backdrop-blur-sm bg-white/30 p-5">
-              <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
-                # Biserica
-              </h4>
-              <p class="text-sm sm:text-base mb-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus ullamcorper dictum nunc non dapibus. Integer dictum,
-                felis sit amet pellentesque aliquet, diam quam rhoncus tellus,
-                sit amet facilisis dui sapien ac nulla. Ut semper tincidunt
-                eleifend. In sed felis ut dolor ultrices congue. Duis rutrum
-                rhoncus elit non gravida. Vivamus convallis interdum elementum.
-                Curabitur porttitor nisl at scelerisque varius. Aliquam ut
-                vestibulum ligula, in consequat magna. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Aliquam ac maximus tortor, at dapibus nunc.
-              </p>
-            </div>
+            <h4 class="text-lg pb-5 font-semibold text-[#f39c12]"># Biblia</h4>
+            <p class="text-sm sm:text-base mb-5">
+              Noi credem în cele șaizeci și șase de cărți ale Vechiului și
+              Noului Testament, ca fiind Cuvântul lui Dumnezeu, înregistrarea
+              completă a dezvăluirii de sine a lui Dumnezeu pentru omenire.
+            </p>
+            <p class="text-sm sm:text-base mb-5">
+              Oameni diferiți, în timp ce au scris într-un stil propriu, au fost
+              insuflați supranatural de Duhul Sfânt pentru a scrie cuvintele lui
+              Dumnezeu, infailibile în scrierile originale.
+            </p>
+            <p class="text-sm sm:text-base mb-5">
+              Prin urmare, cei care se dedică studierii textului biblic în mod
+              literal, ținând cont de genul scrierii și de contextul
+              socio-istorico-gramatical, pot înțelege Cuvântul lui Dumnezeu.
+              Scriptura este pe deplin demnă de încredere și reprezintă singura
+              noastră autoritate, suficientă și finală pentru întreaga viață în
+              materie de credință și practică.
+            </p>
+          </div>
+          <!-- Second Slide -->
+          <div
+            class="swiper-slide flex flex-col backdrop-blur-sm bg-white/30 p-5"
+          >
+            <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
+              # Dumnezeu Tatal
+            </h4>
+            <p class="text-sm sm:text-base mb-5">
+              Noi credem că Dumnezeu Tatăl a creat toate lucrurile precum este
+              scris în cartea Genezei, pentru slava Lui în conformitate cu voia
+              Lui (Apocalipsa 4:11), prin Fiul Său, Isus Cristos.
+            </p>
+            <p class="text-sm sm:text-base mb-5">
+              El susține toate lucrurile prin Cuvântul puterii și harului Său,
+              manifestând conducerea suverană peste toată creația, purtare de
+              grijă și har (Coloseni 1:17, Evrei 1:3).
+            </p>
+          </div>
+          <!-- Third Slide -->
+          <div
+            class="swiper-slide flex flex-col backdrop-blur-sm bg-white/30 p-5"
+          >
+            <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
+              # Dumnezeu Fiul
+            </h4>
+            <p class="text-sm sm:text-base mb-5">
+              Noi credem că Isus Cristos, Fiul etern, mișcat de dragoste, în
+              conformitate cu voința Tatălui, a luat trup omenesc (Ioan 1:1, 14,
+              18).
+            </p>
+            <p class="text-sm sm:text-base mb-5">
+              Conceput prin lucrarea miraculoasă a Duhului Sfânt, s-a născut din
+              Fecioara Maria. El, fiind pe deplin Dumnezeu și pe deplin om (Ioan
+              14:8-9), a trăit o viață fără păcat și a vărsat sângele Său ca
+              sacrificiu, iar prin moartea Lui pe cruce a realizat răscumpărarea
+              pentru toți cei care își pun credința în El. A înviat trupește și
+              vizibil din morți a treia zi și S-a înălțat la ceruri, unde a
+              ocupat locul la dreapta Tatălui.
+            </p>
+            <p class="text-sm sm:text-base mb-5">
+              El este acum Cap al Bisericii, Trupul Său, fiind singurul
+              Mântuitor și Mijlocitor între Dumnezeu și om. Isus Cristos va
+              reveni pe pământ în putere și glorie pentru a împlini misiunea Sa
+              răscumpărătoare (1 Timotei 3:16).
+            </p>
+          </div>
+          <!-- Third Slide -->
+          <div
+            class="swiper-slide flex flex-col backdrop-blur-sm bg-white/30 p-5"
+          >
+            <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
+              # Duhul Sfânt
+            </h4>
+            <p class="text-sm sm:text-base mb-5">
+              Noi credem că Duhul Sfânt, în tot ceea ce face, Îl glorifică pe
+              Domnul Isus Cristos. El condamnă lumea în ceea ce privește
+              păcatul, neprihănirea și judecata. El atrage pe cei nerăscumpărați
+              la pocăință și credință, și odată cu mântuirea dă o viață
+              spirituală nouă celui credincios (nașterea din nou), aducându-l în
+              unire cu Cristos și cu Trupul lui Cristos, care este Biserica.
+            </p>
+            <p class="text-sm sm:text-base mb-5">
+              Duhul Sfânt sfințește credinciosul, îl sigilează, umple,
+              călăuzește, instruiește, îi dă pace, echipează, împuternicește,
+              locuiește în cel credincios după mântuire, dă daruri spirituale
+              credinciosului și Îl ajută să aducă mult rod pentru a-L glorifica
+              pe Dumnezeu.
+            </p>
+            <p class="text-sm sm:text-base mb-5">
+              Datoria credinciosului este să caute plinătatea Duhului și să fie
+              atent să nu “întristeze” Duhul (Efeseni 4:30) sau să “stingă”
+              Duhul (1 Tesaloniceni 5:19) printr-un mod de viață ce se
+              împotrivește continuu voii Sale. (Ioan 16:8, 13:15, Tit 3:5,
+              Efeseni 1:22, 4:11-12, Romani 8:9- 17, 12:4-8, 1 Corinteni 3:16,
+              12:4-5, 11-13, 19, Galateni 5:22-25, Evrei 2:1-4, 2 Corinteni
+              12:12).
+            </p>
+          </div>
+          <!-- Third Slide -->
+          <div
+            class="swiper-slide flex flex-col backdrop-blur-sm bg-white/30 p-5"
+          >
+            <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
+              # Mântuire
+            </h4>
+            <p class="text-sm sm:text-base mb-5">
+              Mântuirea se găsește în nimeni altul decât în El, Isus Cristos
+              (Faptele Apostolilor 4:12). Moartea lui Isus Cristos pe cruce a
+              fost plata unică și completă pentru păcatele întregii omeniri,
+              satisfăcând pe deplin mânia dreaptă a lui Dumnezeu, pentru fiecare
+              persoană care se întoarce de la păcat prin pocăință și credința,
+              și își pune încrederea în Cristos. La mântuire, fiecare persoană
+              devine o creație nouă prin Duhul Sfânt, fiind declarată
+              neprihănită înaintea lui Dumnezeu pe baza meritelor lui Cristos,
+              și devine un copil al lui Dumnezeu (Efeseni 1:5). Credinciosul
+              adevărat poate avea siguranța mântuirii condiționată de
+              perseverența lui continuă în ascultare și iubire pentru Isus
+              Cristos cu o viață dornică de a slăvi pe Dumnezeu până la
+              sfârșitul vieții (Romani 8:37-39; 2 Corinteni 5:21; 1 Corinteni
+              12:13). Un credincios autentic va urmări prin continua creștere un
+              mod de viață asemenea Domnului Isus Cristos (Galateni 4:19),
+              depărtându-se de păcat și aducând roade vizibile în viața de zi cu
+              zi (Romani 13:13-14, Galateni 5:22-24, 1 Ioan 2:6).
+            </p>
+            <p class="text-sm sm:text-base">
+              Dar dacă credinciosul se leapădă de credință sau ajunge să
+              trăiască deliberat în păcat, renunțând la relația lui cu Dumnezeu,
+              deși nimeni nu-i poate judeca mântuirea decât Dumnezeu, biserica
+              nu-i poate oferi siguranță mântuirii, ci mai degrabă avertizare și
+              ajutor pastoral în a reveni pe calea credinței și pocăinței, în
+              relație cu Dumnezeu.
+            </p>
           </div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
 
@@ -374,7 +477,7 @@
           </div>
           <div class="flex flex-col w-full mt-6">
             <button
-              class="w-[200px] mt-5 py-2 px-5 rounded-md font-semibold text-white hover:before:bg-white border-2 border-[#f39c12] relative bg-[#f39c12] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:before:right-0 hover:before:w-full hover:text-black before:rounded-md"
+              class="w-[200px] mt-5 py-2 px-5 rounded-md font-semibold text-white hover:before:bg-white border-2 border-[#f39c12] relative bg-[#f39c12] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:before:right-0 hover:before:w-full hover:text-[#f39c12] before:rounded-md"
             >
               <span class="relative z-10"
                 ><a href="#program">Implicate și tu !</a></span
@@ -450,7 +553,8 @@
               <span class="text-[#f39c12]">10:00 - 12:00</span> | Zi de post
             </p>
             <p class="mt-1 font-semibold">
-              <span class="text-[#f39c12]">20:00 - 22:00</span> | Zi de post
+              <span class="text-[#f39c12]">20:00 - 22:00</span> | Seară de
+              rugăciune
             </p>
           </div>
           <div class="flex flex-col mt-5">
@@ -490,11 +594,13 @@
               >
                 Vino să te închini lui Dumnezeu alături de noi.
               </h3>
-              <p class="mt-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <p class="mt-10 w-full md:w-[70%]">
+                Te așteptăm la biserică pentru a te bucura de comunitate și
+                sprijinul celor care împărtășesc aceleași valori.
               </p>
-              <p class="mt-1">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <p class="mt-5 w-full md:w-[70%]">
+                Împreună putem crește în credință și ne putem încuraja unii pe
+                alții în momentele dificile.
               </p>
               <p class="mt-5">
                 <span class="font-semibold">Serviciu Divin :</span> Duminică ora
@@ -559,6 +665,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
