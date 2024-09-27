@@ -624,33 +624,30 @@ video {
   z-index: 50;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mb-10 {
   margin-bottom: 2.5rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 
-.mb-\[100px\] {
-  margin-bottom: 100px;
-}
-
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .mt-3 {
@@ -715,10 +712,6 @@ video {
 
 .w-\[250px\] {
   width: 250px;
-}
-
-.w-\[400px\] {
-  width: 400px;
 }
 
 .w-\[80\%\] {
@@ -841,12 +834,12 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-transparent {
-  background-color: transparent;
+.bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
 }
 
-.bg-white\/30 {
-  background-color: rgb(255 255 255 / 0.3);
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-\[url\(\'\.\/Images\/lider1\.jpg\'\)\] {
@@ -975,11 +968,6 @@ video {
   line-height: 2.5rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -998,6 +986,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
 }
 
 .font-bold {
@@ -1033,6 +1025,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
@@ -1082,6 +1079,8 @@ video {
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
 
 /* Preloader styles */
 
@@ -1143,8 +1142,8 @@ body.loading #content {
   display: none;
 }
 
-.kristi-regular {
-  font-family: "Kristi", cursive;
+.shadows-into-light-regular {
+  font-family: "Shadows Into Light", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -1266,17 +1265,15 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  /* Default, swiper calculates */
+  width: 100%;
+  /* Set slide width to 100% */
+  overflow: hidden;
+  /* Hide overflow */
 }
 
-/* Force fixed width for slides on smaller screens */
-
-@media (max-width: 768px) {
-  .swiper-slide {
-    width: 400px !important;
-    /* Fixed width for small screens */
-  }
+.swiper-container {
+  overflow-x: hidden;
+  /* Hide horizontal overflow */
 }
 
 .before\:absolute::before {
@@ -1396,8 +1393,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:text-7xl {
-    font-size: 4.5rem;
+  .sm\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
@@ -1432,10 +1429,6 @@ video {
     width: 70%;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1458,18 +1451,8 @@ video {
     line-height: 2rem;
   }
 
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .md\:text-6xl {
     font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .md\:text-8xl {
-    font-size: 6rem;
     line-height: 1;
   }
 
@@ -1480,8 +1463,12 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:w-\[320px\] {
-    width: 320px;
+  .lg\:relative {
+    position: relative;
+  }
+
+  .lg\:w-9\/12 {
+    width: 75%;
   }
 
   .lg\:w-\[35\%\] {
@@ -1496,9 +1483,20 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .lg\:bg-\[url\(\'\.\/Images\/mountains-1\.jpg\'\)\] {
+    background-image: url('./Images/mountains-1.jpg');
+  }
+
+  .lg\:bg-\[url\(\'\.\/Images\/mountains-2\.jpg\'\)\] {
+    background-image: url('./Images/mountains-2.jpg');
+  }
+
+  .lg\:bg-cover {
+    background-size: cover;
+  }
+
+  .lg\:bg-fixed {
+    background-attachment: fixed;
   }
 
   .lg\:text-7xl {

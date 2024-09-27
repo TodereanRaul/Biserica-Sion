@@ -56,9 +56,11 @@ window.onscroll = function () {
 var appendNumber = 4;
 var prependNumber = 1;
 var swiper = new Swiper(".swiper", {
-  slidesPerView: 3, // Default for large screens
+  slidesPerView: "auto", // Set slidesPerView to auto
+  spaceBetween: 0, // Remove space between slides
+  // slidesPerView: 3, // Default for large screens
   centeredSlides: true,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -91,20 +93,37 @@ document
       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
     ]);
   });
+document
+  .querySelector(".prepend-2-slides")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    swiper.prependSlide([
+      '<div class="swiper-slide" style="width: 100%;">Slide ' +
+        --prependNumber +
+        "</div>",
+      '<div class="swiper-slide" style="width: 100%;">Slide ' +
+        --prependNumber +
+        "</div>",
+    ]);
+  });
 
 document
   .querySelector(".prepend-slide")
   .addEventListener("click", function (e) {
     e.preventDefault();
     swiper.prependSlide(
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+      '<div class="swiper-slide" style="width: 100%;">Slide ' +
+        --prependNumber +
+        "</div>"
     );
   });
 
 document.querySelector(".append-slide").addEventListener("click", function (e) {
   e.preventDefault();
   swiper.appendSlide(
-    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+    '<div class="swiper-slide" style="width: 100%;">Slide ' +
+      ++appendNumber +
+      "</div>"
   );
 });
 
@@ -113,7 +132,11 @@ document
   .addEventListener("click", function (e) {
     e.preventDefault();
     swiper.appendSlide([
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+      '<div class="swiper-slide" style="width: 100%;">Slide ' +
+        ++appendNumber +
+        "</div>",
+      '<div class="swiper-slide" style="width: 100%;">Slide ' +
+        ++appendNumber +
+        "</div>",
     ]);
   });

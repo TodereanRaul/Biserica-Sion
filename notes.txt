@@ -9,80 +9,16 @@ orange: #f39c12
 
 typo: Covered By Your Grace',handwriting;
 
-<div class="relative">
-        <div class="flex flex-col text-white">
-          <h2
-            class="kristi-regular font-semibold py-12 text-center text-6xl md:text-5xl lg:text-6xl"
-          >
-            Ce credem noi?
-          </h2>
-          <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-12 px-5">
-            <!--START ONE CARD CREZUL -->
-            <div class="flex flex-col backdrop-blur-sm bg-white/30 p-5">
-              <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
-                # Biblia
-              </h4>
-              <p class="text-sm sm:text-base mb-5">
-                Noi credem în cele șaizeci și șase de cărți ale Vechiului și
-                Noului Testament, ca fiind Cuvântul lui Dumnezeu, înregistrarea
-                completă a dezvăluirii de sine a lui Dumnezeu pentru omenire.
-              </p>
-              <p class="text-sm sm:text-base mb-5">
-                Oameni diferiți, în timp ce au scris într-un stil propriu, au
-                fost insuflați supranatural de Duhul Sfânt pentru a scrie
-                cuvintele lui Dumnezeu, infailibile în scrierile originale.
-              </p>
-              <p class="text-sm sm:text-base mb-5">
-                Prin urmare, cei care se dedică studierii textului biblic în mod
-                literal, ținând cont de genul scrierii și de contextul
-                socio-istorico-gramatical, pot înțelege Cuvântul lui Dumnezeu.
-                Scriptura este pe deplin demnă de încredere și reprezintă
-                singura noastră autoritate, suficientă și finală pentru întreaga
-                viață în materie de credință și practică.
-              </p>
-            </div>
-            <!--END ONE CARD CREZUL -->
-
-            <div class="swiper-slide flex flex-col backdrop-blur-sm bg-white/30 p-5">
-              <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
-                # Dumnezeu Tatal
-              </h4>
-              <p class="text-sm sm:text-base mb-5">
-                Noi credem că Dumnezeu Tatăl a creat toate lucrurile precum este
-                scris în cartea Genezei, pentru slava Lui în conformitate cu
-                voia Lui (Apocalipsa 4:11), prin Fiul Său, Isus Cristos.
-              </p>
-              <p class="text-sm sm:text-base mb-5">
-                El susține toate lucrurile prin Cuvântul puterii și harului Său,
-                manifestând conducerea suverană peste toată creația, purtare de
-                grijă și har (Coloseni 1:17, Evrei 1:3).
-              </p>
-            </div>
-            <div class="swiper-slide flex flex-col backdrop-blur-sm bg-white/30 p-5">
-              <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
-                # Dumnezeu Fiul
-              </h4>
-              <p class="text-sm sm:text-base mb-5">
-                Noi credem că Isus Cristos, Fiul etern, mișcat de dragoste, în
-                conformitate cu voința Tatălui, a luat trup omenesc (Ioan 1:1,
-                14, 18).
-              </p>
-              <p class="text-sm sm:text-base mb-5">
-                Conceput prin lucrarea miraculoasă a Duhului Sfânt, s-a născut
-                din Fecioara Maria. El, fiind pe deplin Dumnezeu și pe deplin om
-                (Ioan 14:8-9), a trăit o viață fără păcat și a vărsat sângele
-                Său ca sacrificiu, iar prin moartea Lui pe cruce a realizat
-                răscumpărarea pentru toți cei care își pun credința în El. A
-                înviat trupește și vizibil din morți a treia zi și S-a înălțat
-                la ceruri, unde a ocupat locul la dreapta Tatălui.
-              </p>
-              <p class="text-sm sm:text-base mb-5">
-                El este acum Cap al Bisericii, Trupul Său, fiind singurul
-                Mântuitor și Mijlocitor între Dumnezeu și om. Isus Cristos va
-                reveni pe pământ în putere și glorie pentru a împlini misiunea
-                Sa răscumpărătoare (1 Timotei 3:16).
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+<span class="relative inline-block stroke-current">
+                <svg
+                  class="absolute -bottom-0.5 w-full max-h-1.5"
+                  viewBox="0 0 55 5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  preserveAspectRatio="none"
+                >
+                  <path
+                    d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </span>
