@@ -29,37 +29,38 @@
     <section id="acasa">
       <div id="content" class="main relative">
         <!-- Background image with opacity -->
-        <img
-          src="./Images/biserica-inside.jpg"
-          alt=""
-          class="w-full h-screen object-cover"
-        />
+        <div
+          class="w-full h-screen bg-[url('./Images/biserica-inside.jpg')] bg-cover bg-center lg:bg-fixed"
+        ></div>
         <!-- Dark overlay -->
         <div class="absolute inset-0 bg-black opacity-30 lg:opacity-50"></div>
         <!-- Content on top of the image -->
         <div class="flex flex-col absolute inset-0 items-center justify-center">
           <h1
-            class="text-white text-4xl md:text-6xl lg:text-7xl font-semibold text-center w-full lg:w-[70%]"
+            class="text-slate-100 text-4xl md:text-6xl lg:text-7xl font-semibold text-center w-full lg:w-[70%]"
           >
             Biserica creștină română ucraineană
           </h1>
           <p
-            class="text-white w-[80%] sm:40% lg:w-[35%] text-center mt-4 italic text-lg"
+            class="text-slate-200 w-[80%] sm:40% lg:w-[35%] text-center mt-4 italic text-lg"
           >
             „Căci, acolo unde sunt doi sau trei adunaţi în Numele Meu, sunt şi
             Eu în mijlocul lor.”
           </p>
-          <button
-            class="mt-5 py-2 px-5 rounded-md font-semibold text-white hover:before:bg-[#f39c12] border border-[#f39c12] relative bg-transparent transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#f39c12] before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full hover:text-white before:rounded-md flex items-center gap-2 group"
+          <a
+            href="#program"
+            class="mt-5 py-2 px-5 rounded-md font-semibold hover:before:bg-[#f39c12] border border-[#f39c12] relative bg-transparent transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#f39c12] before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full before:rounded-md flex items-center gap-2 group"
           >
-            <span class="relative z-10">
-              <a href="#program">Programul Bisericii</a>
+            <span
+              class="relative z-10 text-[#f39c12] group-hover:text-white transition-colors duration-300"
+            >
+              Programul Bisericii
             </span>
 
             <!-- SVG Arrow -->
             <svg
               viewBox="0 0 24 24"
-              class="relative z-10 size-5 stroke-[3px] fill-none stroke-current opacity-50 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+              class="relative z-10 size-5 stroke-[3px] fill-none stroke-[#f39c12] transition-colors duration-300 opacity-50 group-hover:opacity-100 group-hover:stroke-white"
             >
               <line
                 x1="5"
@@ -73,7 +74,7 @@
                 class="translate-x-[-8px] group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
               />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
 
@@ -230,77 +231,50 @@
       </header>
     </section>
 
-    <section id="despre-noi">
-      <div class="w-full container mx-auto px-2">
-        <div class="py-12 flex flex-col w-full justify-center items-center">
-          <h2 class="text-4xl sm:text-5xl mb-12 shadows-into-light-regular">
-            Conducerea Bisericii
-          </h2>
-          <div class="flex flex-wrap justify-evenly gap-8 w-full">
-            <!--START ONE CARD WITH IMG AND TEXT PASTOR -->
-            <div class="flex flex-col items-center">
-              <div
-                class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
-              >
-                <img
-                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                  src="./Images/pastor-principal.jpg"
-                  alt="Toader Gorda"
-                />
-              </div>
-              <h2 class="text-xl font-semibold text-center pt-2">
-                Toader Gorda
-              </h2>
+    <section class="py-12">
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-6 md:px-10"
+      >
+        <!-- First Column: Despre Noi Section -->
+        <div class="flex flex-col">
+          <h3 class="text-4xl sm:text-5xl shadows-into-light-regular mb-3">
+            Despre Noi
+          </h3>
+          <div class="h-full flex justify-center items-center">
+            <div
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/cor_baietii.jpg')] bg-cover bg-center rounded-lg mt-4 md:mt-6"
+              role="img"
+              aria-label="Grupul Baietilor"
+            ></div>
+          </div>
+        </div>
 
-              <p class="text-lg font-light text-center">Pastor principal</p>
-              <p
-                class="text-normal font-light text-center hover:text-[#f39c12]"
-              >
-                <a href="tel:+380 50 912 6820">+380 50 912 6820</a>
-              </p>
-            </div>
-            <!--END ONE CARD WITH IMG AND TEXT PASTOR -->
-            <div class="flex flex-col items-center">
-              <div
-                class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
-              >
-                <img
-                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                  src="./Images/Viorel Hiticaș Cotu-min.jpeg"
-                  alt="Viorel Hiticaș Cotu"
-                />
-              </div>
-              <h2 class="text-xl font-semibold text-center pt-2">
-                Viorel Hiticaș Cotu
-              </h2>
-              <p class="text-lg font-light text-center">Pastor asistent</p>
-              <p
-                class="text-normal font-light text-center hover:text-[#f39c12]"
-              >
-                <a href="tel:+32466092940">+32 466 09 29 40</a>
-              </p>
-            </div>
+        <!-- Second Column: Image Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <!-- First Image: Grup Fete -->
+          <div class="flex flex-col justify-center gap-4">
+            <div
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/grup_fete.jpg')] bg-cover bg-center rounded-lg"
+              role="img"
+              aria-label="Grupul Fetelor"
+            ></div>
+          </div>
 
-            <div class="flex flex-col items-center">
-              <div
-                class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
-              >
-                <img
-                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
-                  src="./Images/pastor-principal.jpg"
-                  alt="Mitu Onciul"
-                />
-              </div>
-              <h2 class="text-xl font-semibold text-center pt-2">
-                Mitu Onciul
-              </h2>
-              <p class="text-lg font-light text-center">Pastor asistent</p>
-              <p
-                class="text-normal font-light text-center hover:text-[#f39c12]"
-              >
-                <a href="tel:+32484789252">+32 484 78 92 52</a>
-              </p>
-            </div>
+          <!-- Second Image Column: Traducere and Cor Fete -->
+          <div class="flex flex-col justify-center gap-4">
+            <!-- Smaller Image: Traducere -->
+            <div
+              class="w-full h-[150px] md:h-[200px] bg-[url('./Images/traducere.jpg')] bg-cover bg-center rounded-lg"
+              role="img"
+              aria-label="Traducere"
+            ></div>
+
+            <!-- Larger Image: Cor Fete -->
+            <div
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/cor_fete.jpg')] bg-cover bg-center rounded-lg"
+              role="img"
+              aria-label="Corul Fetelor"
+            ></div>
           </div>
         </div>
       </div>
@@ -496,12 +470,11 @@
             </p>
           </div>
           <div class="flex flex-col w-full mt-6">
-            <button
+            <a
+              href="https://shorturl.at/HbE79"
               class="group w-[200px] mt-5 py-2 px-5 rounded-md font-semibold text-white hover:before:bg-white border-2 border-[#f39c12] relative bg-[#f39c12] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:before:right-0 hover:before:w-full hover:text-[#f39c12] before:rounded-md flex items-center gap-2"
             >
-              <span class="relative z-10">
-                <a href="https://shorturl.at/HbE79">Implicate și tu !</a>
-              </span>
+              <span class="relative z-10">Implicate și tu !</span>
 
               <!-- SVG Arrow -->
               <svg
@@ -520,7 +493,7 @@
                   class="translate-x-[-8px] group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
                 />
               </svg>
-            </button>
+            </a>
 
             <div
               class="w-full h-[250px] md:h-[400px] bg-[url('./Images/media_team.jpg')] bg-cover bg-center rounded-lg mt-4 md:mt-6"

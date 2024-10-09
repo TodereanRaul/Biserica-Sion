@@ -9,16 +9,81 @@ orange: #f39c12
 
 typo: Covered By Your Grace',handwriting;
 
-<span class="relative inline-block stroke-current">
-                <svg
-                  class="absolute -bottom-0.5 w-full max-h-1.5"
-                  viewBox="0 0 55 5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  preserveAspectRatio="none"
-                >
-                  <path
-                    d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002"
-                    stroke-width="2"
-                  ></path>
-                </svg>
-              </span>
+
+
+// Section Conducerea Bisericii
+ <section id="despre-noi">
+      <div class="w-full container mx-auto px-2">
+        <div class="py-12 flex flex-col w-full justify-center items-center">
+          <h2 class="text-4xl sm:text-5xl mb-12 shadows-into-light-regular">
+            Conducerea Bisericii
+          </h2>
+          <div class="flex flex-wrap justify-evenly gap-8 w-full">
+            <!--START ONE CARD WITH IMG AND TEXT PASTOR -->
+            <div class="flex flex-col items-center">
+              <div
+                class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
+              >
+                <img
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  src="./Images/pastor-principal.jpg"
+                  alt="Toader Gorda"
+                />
+              </div>
+              <h2 class="text-xl font-semibold text-center pt-2">
+                Toader Gorda
+              </h2>
+
+              <p class="text-lg font-light text-center">Pastor principal</p>
+              <p
+                class="text-normal font-light text-center hover:text-[#f39c12]"
+              >
+                <a href="tel:+380 50 912 6820">+380 50 912 6820</a>
+              </p>
+            </div>
+            <!--END ONE CARD WITH IMG AND TEXT PASTOR -->
+            <div class="flex flex-col items-center">
+              <div
+                class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
+              >
+                <img
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  src="./Images/Viorel Hiticaș Cotu-min.jpeg"
+                  alt="Viorel Hiticaș Cotu"
+                />
+              </div>
+              <h2 class="text-xl font-semibold text-center pt-2">
+                Viorel Hiticaș Cotu
+              </h2>
+              <p class="text-lg font-light text-center">Pastor asistent</p>
+              <p
+                class="text-normal font-light text-center hover:text-[#f39c12]"
+              >
+                <a href="tel:+32466092940">+32 466 09 29 40</a>
+              </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <div
+                class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
+              >
+                <img
+                  class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                  src="./Images/pastor-principal.jpg"
+                  alt="Mitu Onciul"
+                />
+              </div>
+              <h2 class="text-xl font-semibold text-center pt-2">
+                Mitu Onciul
+              </h2>
+              <p class="text-lg font-light text-center">Pastor asistent</p>
+              <p
+                class="text-normal font-light text-center hover:text-[#f39c12]"
+              >
+                <a href="tel:+32484789252">+32 484 78 92 52</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
