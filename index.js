@@ -140,3 +140,30 @@ document
         "</div>",
     ]);
   });
+
+// Select the video elements
+const video1 = document.getElementById("video1");
+const video2 = document.getElementById("video2");
+
+// Add event listener to play video on click
+video1.addEventListener("click", function () {
+  console.log("Video 1 clicked"); // Debugging: Check if click event is working
+  if (video1.paused) {
+    video1.play();
+    console.log("Video 1 playing"); // Debugging: Check if play function is triggered
+  } else {
+    video1.pause();
+    console.log("Video 1 paused"); // Debugging: Check if pause function is triggered
+  }
+});
+
+video2.addEventListener("click", function () {
+  console.log("Video 2 clicked"); // Debugging: Check if click event is working
+  if (video2.paused) {
+    video2.play();
+    console.log("Video 2 playing"); // Debugging: Check if play function is triggered
+  } else {
+    video2.pause();
+    console.log("Video 2 paused"); // Debugging: Check if pause function is triggered
+  }
+});

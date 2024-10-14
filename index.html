@@ -519,6 +519,104 @@
     </section>
 
     <section
+      id="crezul"
+      class="bg-cover bg-center py-12 bg-[url('./Images/bible.jpg')] lg:relative lg:bg-[url('./Images/bible.jpg')] lg:bg-fixed lg:bg-cover"
+    >
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <h2
+        class="relative text-white text-center text-4xl sm:text-6xl shadows-into-light-regular mb-5"
+      >
+        Isus te Iubeste !
+      </h2>
+      <h2
+        class="relative text-white text-center text-4xl sm:text-7xl shadows-into-light-regular mb-5"
+      >
+        Jesus t'aime !
+      </h2>
+      <h2
+        class="relative text-white text-center text-4xl sm:text-6xl shadows-into-light-regular"
+      >
+        God loves You !
+      </h2>
+    </section>
+
+    <!-- Content for 'slujirea de ajutorare' -->
+    <section id="video-section">
+      <div class="container mx-auto w-full px-6 md:px-10 py-12">
+        <div class="flex flex-col">
+          <h3 class="text-4xl sm:text-5xl shadows-into-light-regular text-end">
+            Lucrarea de ajutorare
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <!-- Second div (now ordered first on large screens) -->
+              <div class="flex flex-col justify-center gap-4 lg:order-first">
+                <div
+                  class="w-full h-[200px] bg-[url('./Images/ajutorare_team.jpeg')] bg-cover bg-center rounded-lg"
+                ></div>
+                <div class="w-fullw-full h-[250px] md:h-[400px]">
+                  <video
+                    id="video1"
+                    muted
+                    playsinline
+                    controls
+                    class="inset-0 w-full h-full object-cover z-[-1] rounded-lg"
+                  >
+                    <source src="./Videos/helping.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+
+              <!-- First div (which comes second on large screens) -->
+              <div class="flex flex-col justify-center gap-4">
+                <div class="w-full h-[250px] md:h-[400px] rounded-lg">
+                  <video
+                    id="video2"
+                    muted
+                    playsinline
+                    controls
+                    class="inset-0 w-full h-full object-cover z-[-1] rounded-lg"
+                  >
+                    <source
+                      src="./Videos/making_sandwiches.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col order-first sm:order-last">
+              <p
+                class="italic text-lg md:text-2xl mt-4 md:mt-10 text-center md:text-end"
+              >
+                „Isus i-a răspuns:<span class="text-[#f39c12]"
+                  >„Să iubeşti pe Domnul, Dumnezeul tău, cu toată inima ta, cu
+                  tot sufletul tău şi cu tot cugetul tău.”</span
+                >
+
+                Aceasta este cea dintâi şi cea mai mare poruncă. Iar a doua,
+                asemenea ei, este:
+                <span class="text-[#f39c12]"
+                  >‘Să iubeşti pe aproapele tău ca pe tine însuţi’.</span
+                >”
+                <span class="text-base md:text-xl not-italic">
+                  Matei 22:37-39</span
+                >
+              </p>
+              <div
+                class="w-full h-[250px] md:h-[400px] bg-[url('./Images/ajutorare.jpeg')] bg-cover bg-center rounded-lg mt-4 md:mt-6"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
       id="program"
       class="py-12 bg-cover bg-center bg-[url('./Images/mountains-2.jpg')] lg:relative lg:bg-[url('./Images/mountains-2.jpg')] lg:bg-fixed lg:bg-cover"
     >
