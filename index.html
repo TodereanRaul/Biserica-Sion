@@ -4,15 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biserica Ucraineană Muntele Sionului</title>
+    <meta
+      name="description"
+      content="Biserica Ucraineană Muntele Sionului din Bruxelles oferă servicii divine, rugăciuni și activități pentru comunitatea ucraineană. Alăturați-vă nouă pentru creștere spirituală și comunitate."
+    />
+    <meta
+      name="keywords"
+      content="biserica ucraineană, Muntele Sionului, Bruxelles, servicii divine, comunitate creștină, rugăciune"
+    />
+    <link
+      rel="canonical"
+      href="https://www.bisericamuntelesionului.be/index.html"
+    />
     <link rel="icon" href="./Images/LOGO BUMS - 1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link rel="icon" type="image/png" href="./Images/LOGO BUMS - 1.png" />
     <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- Open Graph tags -->
+    <meta
+      property="og:title"
+      content="Biserica Ucraineană Muntele Sionului | Servicii Divine în Bruxelles"
+    />
+    <meta
+      property="og:description"
+      content="Alăturați-vă comunității noastre pentru servicii divine, rugăciuni și activități spirituale în Bruxelles."
+    />
+    <meta
+      property="og:image"
+      content="https://www.bisericamuntelesionului.be/Images/LOGO BUMS - 1.png"
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
 
     <!-- Italic Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,30 +55,190 @@
     />
 
     <link rel="stylesheet" href="output.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Biserica Ucraineană Muntele Sionului",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rue Remy Soetens 36",
+          "addressLocality": "Jette",
+          "postalCode": "1090",
+          "addressCountry": "BE"
+        },
+        "telephone": "",
+        "url": ""
+      }
+    </script>
   </head>
   <body>
     <div id="preloader"></div>
-    <section id="acasa">
+    <header
+      id="navbar"
+      class="navbar w-full fixed top-0 z-50 px-5 transition-colors duration-300"
+      style="background-color: rgba(0, 0, 0, 0)"
+    >
+      <div class="flex justify-between py-3">
+        <a class="w-[250px] my-2" href="./index.html"
+          ><img src="./Images/LOGO BUMS  - 4.png" class="w-full h-full"
+        /></a>
+        <div class="container justify-end flex items-center">
+          <div class="flex-col justify-center">
+            <div class="flex text-slate-200 text-base font-semibold gap-3">
+              <!-- Desktop Navbar Links -->
+              <a
+                class="p-3 cursor-pointer hover:text-[#f39c12] hideElements duration-300"
+                href="#crezul"
+                >Crezul</a
+              >
+              <a
+                class="p-3 cursor-pointer hover:text-[#f39c12] hideElements duration-300"
+                href="#contact"
+                >Contact</a
+              >
+
+              <div class="flex justify-center items-center">
+                <a
+                  class="px-8 py-2 cursor-pointer live-btn hideElements rounded-md text-center transition duration-300 ease-in-out"
+                  style="background-color: #e72929"
+                  href="https://www.youtube.com/@bisericaucraineanamunteles9760"
+                  >Live</a
+                >
+              </div>
+
+              <!-- Mobile Navbar Button (Menu Icon) -->
+              <button
+                class="p-3 cursor-pointer menu-btn"
+                onclick="showSidebar()"
+              >
+                <svg
+                  id="Menu--Streamline-Carbon.svg"
+                  class="fill-slate-300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="-0.5 -0.5 16 16"
+                  height="26"
+                  width="26"
+                >
+                  <desc>Menu Streamline Icon: https://streamlinehq.com</desc>
+                  <defs></defs>
+                  <title>menu</title>
+                  <path
+                    d="M1.875 2.8125h11.25v0.9375H1.875Z"
+                    stroke-width="1"
+                  ></path>
+                  <path
+                    d="M1.875 11.25h11.25v0.9375H1.875Z"
+                    stroke-width="1"
+                  ></path>
+                  <path
+                    d="M1.875 5.625h11.25v0.9375H1.875Z"
+                    stroke-width="1"
+                  ></path>
+                  <path
+                    d="M1.875 8.4375h11.25v0.9375H1.875Z"
+                    stroke-width="1"
+                  ></path>
+                  <path
+                    id="_Transparent_Rectangle_"
+                    d="M0 0h15v15H0Z"
+                    fill="none"
+                    stroke-width="1"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- START SIDEBAR (Mobile Navbar) -->
+          <div
+            class="sidebar flex justify-center items-center h-full"
+            style="background-color: rgba(0, 0, 0, 0.5)"
+          >
+            <button
+              class="absolute top-4 right-4 p-3 cursor-pointer close-btn"
+              onclick="hideSidebar()"
+            >
+              <svg
+                id="Close--Streamline-Carbon.svg"
+                class="fill-slate-300"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="-0.5 -0.5 16 16"
+                height="26"
+                width="26"
+              >
+                <desc>Close Streamline Icon: https://streamlinehq.com</desc>
+                <defs></defs>
+                <path
+                  d="M8.162859375 7.5 11.25 4.412859375 10.587140625 3.75 7.5 6.837140625 4.4129531250000005 3.75 3.75 4.412859375 6.837140625 7.5 3.75 10.587140625 4.4129531250000005 11.25 7.5 8.162859375 10.587140625 11.25 11.25 10.587140625 8.162859375 7.5z"
+                  stroke-width="1"
+                ></path>
+                <g id="_Transparent_Rectangle_">
+                  <path d="M0 0h15v15H0Z" fill="none" stroke-width="1"></path>
+                </g>
+              </svg>
+            </button>
+
+            <div
+              class="flex flex-col text-slate-200 text-base font-semibold mt-5"
+            >
+              <a class="p-3 cursor-pointer hover:text-[#f39c12]" href="#crezul"
+                >Crezul</a
+              >
+              <a class="p-3 cursor-pointer hover:text-[#f39c12]" href="#contact"
+                >Contact</a
+              >
+              <div class="flex justify-center items-center">
+                <a
+                  class="px-8 py-2 cursor-pointer live-btn rounded-md text-center transition duration-300 ease-in-out"
+                  style="background-color: #e72929"
+                  href="https://www.youtube.com/@bisericaucraineanamunteles9760"
+                  >Live</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- END SIDEBAR -->
+        </div>
+      </div>
+    </header>
+
+    <section id="acasa" aria-labelledby="hero-heading">
       <div id="content" class="main relative">
-        <!-- Background image with opacity -->
-        <div
-          class="w-full h-screen bg-[url('./Images/biserica-inside.jpg')] bg-cover bg-center lg:bg-fixed"
-        ></div>
-        <!-- Dark overlay -->
-        <div class="absolute inset-0 bg-black opacity-30 lg:opacity-50"></div>
+        <!-- Background image with dark overlay -->
+        <figure class="relative w-full h-screen">
+          <img
+            src="./Images/biserica-inside.jpg"
+            alt="Interior of the Romanian-Ukrainian Christian Church"
+            class="w-full h-full object-cover hidden lg:block"
+          />
+          <div
+            class="absolute inset-0 bg-cover bg-center lg:bg-fixed"
+            style="background-image: url('./Images/biserica-inside.jpg')"
+          ></div>
+        </figure>
+
+        <!-- Dark overlay that applies to the entire section (same on mobile and large screens) -->
+        <div class="absolute inset-0 md:bg-black md:opacity-50"></div>
+
         <!-- Content on top of the image -->
-        <div class="flex flex-col absolute inset-0 items-center justify-center">
+        <div
+          class="flex flex-col absolute inset-0 items-center justify-center text-center"
+        >
           <h1
             class="text-slate-100 text-4xl md:text-6xl lg:text-7xl font-semibold text-center w-full lg:w-[70%]"
           >
             Biserica creștină română ucraineană
           </h1>
           <p
-            class="text-slate-200 w-[80%] sm:40% lg:w-[35%] text-center mt-4 italic text-lg"
+            class="text-slate-200 w-[80%] sm:w-[40%] lg:w-[35%] text-center mt-4 italic text-lg"
           >
             „Căci, acolo unde sunt doi sau trei adunaţi în Numele Meu, sunt şi
             Eu în mijlocul lor.”
           </p>
+
           <a
             href="#program"
             class="mt-5 py-2 px-5 rounded-md font-semibold hover:before:bg-[#f39c12] border border-[#f39c12] relative bg-transparent transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#f39c12] before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full before:rounded-md flex items-center gap-2 group"
@@ -77,158 +269,6 @@
           </a>
         </div>
       </div>
-
-      <header
-        id="navbar"
-        class="navbar w-full fixed top-0 z-50 px-5 transition-colors duration-300"
-        style="background-color: rgba(0, 0, 0, 0)"
-      >
-        <div class="flex justify-between py-1">
-          <img src="./Images/LOGO BUMS  - 4.png" class="w-[250px] my-2" />
-          <div class="container justify-end flex items-center">
-            <div class="flex-col justify-center">
-              <div class="flex text-slate-200 text-base font-semibold gap-3">
-                <!-- <a
-                  class="p-3 cursor-pointer hover:text-[#f39c12] duration-300 hideElements"
-                  href="#acasa"
-                  >Acasă</a
-                > -->
-
-                <a
-                  class="p-3 cursor-pointer hover:text-[#f39c12] hideElements duration-300"
-                  href="#crezul"
-                  >Crezul</a
-                >
-
-                <!-- <a
-                  class="p-3 cursor-pointer hover:text-[#f39c12] hideElements duration-300"
-                  href=""
-                  >Galerie</a
-                > -->
-
-                <a
-                  class="p-3 cursor-pointer hover:text-[#f39c12] hideElements duration-300"
-                  href="#program"
-                  >Contact</a
-                >
-
-                <div class="flex justify-center items-center">
-                  <a
-                    class="px-8 py-2 cursor-pointer live-btn hideElements rounded-md text-center transition duration-300 ease-in-out"
-                    style="background-color: #e72929"
-                    href="https://www.youtube.com/@bisericaucraineanamunteles9760"
-                    >Live</a
-                  >
-                </div>
-
-                <button
-                  class="p-3 cursor-pointer menu-btn"
-                  onclick="showSidebar()"
-                >
-                  <svg
-                    id="Menu--Streamline-Carbon.svg"
-                    class="fill-slate-300"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="-0.5 -0.5 16 16"
-                    height="26"
-                    width="26"
-                  >
-                    <desc>Menu Streamline Icon: https://streamlinehq.com</desc>
-                    <defs></defs>
-                    <title>menu</title>
-                    <path
-                      d="M1.875 2.8125h11.25v0.9375H1.875Z"
-                      stroke-width="1"
-                    ></path>
-                    <path
-                      d="M1.875 11.25h11.25v0.9375H1.875Z"
-                      stroke-width="1"
-                    ></path>
-                    <path
-                      d="M1.875 5.625h11.25v0.9375H1.875Z"
-                      stroke-width="1"
-                    ></path>
-                    <path
-                      d="M1.875 8.4375h11.25v0.9375H1.875Z"
-                      stroke-width="1"
-                    ></path>
-                    <path
-                      id="_Transparent_Rectangle_"
-                      d="M0 0h15v15H0Z"
-                      fill="none"
-                      stroke-width="1"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            <!-- START SIDEBAR -->
-            <div
-              class="sidebar flex justify-center items-center h-full"
-              style="background-color: rgba(0, 0, 0, 0.5)"
-            >
-              <button
-                class="absolute top-4 right-4 p-3 cursor-pointer close-btn"
-                onclick="hideSidebar()"
-              >
-                <svg
-                  id="Close--Streamline-Carbon.svg"
-                  class="fill-slate-300"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="-0.5 -0.5 16 16"
-                  height="26"
-                  width="26"
-                >
-                  <desc>Close Streamline Icon: https://streamlinehq.com</desc>
-                  <defs></defs>
-                  <path
-                    d="M8.162859375 7.5 11.25 4.412859375 10.587140625 3.75 7.5 6.837140625 4.4129531250000005 3.75 3.75 4.412859375 6.837140625 7.5 3.75 10.587140625 4.4129531250000005 11.25 7.5 8.162859375 10.587140625 11.25 11.25 10.587140625 8.162859375 7.5z"
-                    stroke-width="1"
-                  ></path>
-                  <g id="_Transparent_Rectangle_">
-                    <path d="M0 0h15v15H0Z" fill="none" stroke-width="1"></path>
-                  </g>
-                </svg>
-              </button>
-
-              <div
-                class="flex flex-col text-slate-200 text-base font-semibold mt-5"
-              >
-                <!-- <a class="p-3 cursor-pointer hover:text-[#f39c12]" href="#acasa"
-                  >Acasă</a
-                > -->
-
-                <a
-                  class="p-3 cursor-pointer hover:text-[#f39c12]"
-                  href="#crezul"
-                  >Crezul</a
-                >
-
-                <!-- <a class="p-3 cursor-pointer hover:text-[#f39c12]" href=""
-                  >Galerie</a
-                > -->
-
-                <a
-                  class="p-3 cursor-pointer hover:text-[#f39c12]"
-                  href="#contact"
-                  >Contact</a
-                >
-
-                <div class="flex justify-center items-center">
-                  <a
-                    class="px-8 py-2 cursor-pointer live-btn rounded-md text-center transition duration-300 ease-in-out"
-                    style="background-color: #e72929"
-                    href="https://www.youtube.com/@bisericaucraineanamunteles9760"
-                    >Live</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- END SIDEBAR -->
-          </div>
-        </div>
-      </header>
     </section>
 
     <section class="py-12">
@@ -237,14 +277,13 @@
       >
         <!-- First Column: Despre Noi Section -->
         <div class="flex flex-col">
-          <h3 class="text-4xl sm:text-5xl shadows-into-light-regular mb-3">
+          <h2 class="text-4xl sm:text-5xl shadows-into-light-regular mb-3">
             Despre Noi
-          </h3>
+          </h2>
           <div class="h-full flex justify-center items-center">
+            <!-- Adding an <img> for SEO and accessibility -->
             <div
               class="w-full h-[250px] md:h-[400px] bg-[url('./Images/cor_baietii.jpg')] bg-cover bg-center rounded-lg mt-4 md:mt-6 transition duration-300 ease-in-out hover:scale-105"
-              role="img"
-              aria-label="Grupul Baietilor"
             ></div>
           </div>
         </div>
@@ -527,7 +566,7 @@
       <h2
         class="relative text-white text-center text-4xl sm:text-6xl shadows-into-light-regular mb-5"
       >
-        Isus te Iubeste !
+        Isus te Iubește !
       </h2>
       <h2
         class="relative text-white text-center text-4xl sm:text-7xl shadows-into-light-regular mb-5"
@@ -537,7 +576,7 @@
       <h2
         class="relative text-white text-center text-4xl sm:text-6xl shadows-into-light-regular"
       >
-        God loves You !
+        Jesus loves you !
       </h2>
     </section>
 
@@ -550,6 +589,7 @@
           >
             Lucrarea de ajutorare
           </h3>
+
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <!-- Second div (now ordered first on large screens) -->
@@ -609,9 +649,108 @@
                   Matei 22:37-39</span
                 >
               </p>
-              <div
-                class="w-full h-[250px] md:h-[400px] bg-[url('./Images/ajutorare.jpeg')] bg-cover bg-center rounded-lg mt-4 md:mt-6 transition duration-300 ease-in-out hover:scale-105"
-              ></div>
+              <div class="flex flex-col w-full mt-6 items-end">
+                <button
+                  data-modal-target="default-modal"
+                  data-modal-toggle="default-modal"
+                  class="group w-[250px] mt-5 py-2 px-5 rounded-md font-semibold text-white hover:before:bg-white border-2 border-[#f39c12] relative bg-[#f39c12] transition-all before:absolute before:bottom-0 before:right-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-white before:transition-all before:duration-500 hover:before:right-0 hover:before:w-full hover:text-[#f39c12] before:rounded-md flex items-center gap-2"
+                >
+                  <span class="relative z-10">Vreau și eu să particip !</span>
+
+                  <!-- SVG Arrow -->
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="relative z-10 size-5 stroke-[3px] fill-none stroke-current opacity-50 transition-opacity duration-300 ease-in-out group-hover:opacity-100"
+                  >
+                    <line
+                      x1="5"
+                      y1="12"
+                      x2="19"
+                      y2="12"
+                      class="scale-x-0 translate-x-[10px] group-hover:translate-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"
+                    />
+                    <polyline
+                      points="12 5 19 12 12 19"
+                      class="translate-x-[-8px] group-hover:translate-x-0 transition-transform duration-300 ease-in-out"
+                    />
+                  </svg>
+                </button>
+
+                <!-- Main modal -->
+                <div
+                  id="default-modal"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full"
+                >
+                  <div class="relative p-4 w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div
+                      class="relative bg-white rounded-lg shadow dark:bg-gray-700"
+                    >
+                      <!-- Modal header -->
+                      <div
+                        class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
+                      >
+                        <h3
+                          class="text-xl font-semibold text-gray-900 dark:text-white"
+                        >
+                          Responsabil
+                        </h3>
+                        <button
+                          type="button"
+                          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                          data-modal-hide="default-modal"
+                        >
+                          <svg
+                            class="w-3 h-3"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 14 14"
+                          >
+                            <path
+                              stroke="currentColor"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                            />
+                          </svg>
+                          <span class="sr-only">Close modal</span>
+                        </button>
+                      </div>
+                      <!-- Modal body -->
+                      <div class="p-4 md:p-5 space-y-4">
+                        <div class="flex flex-col items-center">
+                          <div
+                            class="relative max-w-xs overflow-hidden bg-cover bg-no-repeat"
+                          >
+                            <img
+                              class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
+                              src="./Images/responsabil_ajutoare.jpeg"
+                              alt="Toader Gorda"
+                            />
+                          </div>
+                          <h2 class="text-xl font-semibold text-center pt-2">
+                            Onciul Anatolii
+                          </h2>
+
+                          <p
+                            class="text-normal font-light text-center hover:text-[#f39c12]"
+                          >
+                            <a href="tel:+32487257491">+32 487 25 74 91</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full h-[250px] md:h-[400px] bg-[url('./Images/ajutorare.jpeg')] bg-cover bg-center rounded-lg mt-4 md:mt-6 transition duration-300 ease-in-out hover:scale-105"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
@@ -782,18 +921,22 @@
       </div>
     </section>
     <footer class="">
-      <div class="text-center p-3 bg-[#F6F5F2]">
+      <div class="flex flex-row p-3 bg-[#F6F5F2] justify-between items-center">
         <p class="text-sm">
           © 2024 Biserica Ucraineană Muntele Sionului - All rights reserved.
+        </p>
+        <p class="text-[10px]">
+          Code and Design :
           <a
             class="text-[10px] text-red-800"
             href="www.linkedin.com/in/raul-toderean-5279912a8"
-            >Raul T.
+          >
+            Raul T.
           </a>
         </p>
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
