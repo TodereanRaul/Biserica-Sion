@@ -21,10 +21,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link rel="icon" type="image/png" href="./Images/LOGO BUMS - 1.png" />
+
+    <!-- Additional styles and components for Tailwind -->
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet"
     />
+
+    <!-- Slider/Caroussel -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -33,7 +37,7 @@
     <!-- Open Graph tags -->
     <meta
       property="og:title"
-      content="Biserica Ucraineană Muntele Sionului | Servicii Divine în Bruxelles"
+      content="Biserica Ucraineană Muntele Sionului | Biserica Domnului în Bruxelles"
     />
     <meta
       property="og:description"
@@ -78,13 +82,13 @@
     <div id="preloader"></div>
     <header
       id="navbar"
-      class="navbar w-full fixed top-0 z-50 px-5 transition-colors duration-300"
+      class="navbar w-full fixed top-0 z-50 px-5 transition-colors duration-300 bg-transparent"
       style="background-color: rgba(0, 0, 0, 0)"
     >
       <div class="flex justify-between py-3">
-        <a class="w-[250px] my-2" href="./index.html"
-          ><img src="./Images/LOGO BUMS  - 4.png" class="w-full h-full"
-        /></a>
+        <a class="w-[250px] my-2" href="./index.html">
+          <img src="./Images/LOGO BUMS  - 4.png" class="w-full h-full" />
+        </a>
         <div class="container justify-end flex items-center">
           <div class="flex-col justify-center">
             <div class="flex text-slate-200 text-base font-semibold gap-3">
@@ -111,7 +115,7 @@
 
               <!-- Mobile Navbar Button (Menu Icon) -->
               <button
-                class="p-3 cursor-pointer menu-btn"
+                class="p-3 cursor-pointer menu-btn bg-black rounded-full"
                 onclick="showSidebar()"
               >
                 <svg
@@ -122,9 +126,7 @@
                   height="26"
                   width="26"
                 >
-                  <desc>Menu Streamline Icon: https://streamlinehq.com</desc>
-                  <defs></defs>
-                  <title>menu</title>
+                  <desc>Menu Streamline Icon</desc>
                   <path
                     d="M1.875 2.8125h11.25v0.9375H1.875Z"
                     stroke-width="1"
@@ -155,10 +157,10 @@
           <!-- START SIDEBAR (Mobile Navbar) -->
           <div
             class="sidebar flex justify-center items-center h-full"
-            style="background-color: rgba(0, 0, 0, 0.5)"
+            style="background-color: rgba(0, 0, 0, 0.8); z-index: 60"
           >
             <button
-              class="absolute top-4 right-4 p-3 cursor-pointer close-btn"
+              class="absolute top-4 right-4 p-3 cursor-pointer close-btn bg-black rounded-full"
               onclick="hideSidebar()"
             >
               <svg
@@ -169,8 +171,7 @@
                 height="26"
                 width="26"
               >
-                <desc>Close Streamline Icon: https://streamlinehq.com</desc>
-                <defs></defs>
+                <desc>Close Streamline Icon</desc>
                 <path
                   d="M8.162859375 7.5 11.25 4.412859375 10.587140625 3.75 7.5 6.837140625 4.4129531250000005 3.75 3.75 4.412859375 6.837140625 7.5 3.75 10.587140625 4.4129531250000005 11.25 7.5 8.162859375 10.587140625 11.25 11.25 10.587140625 8.162859375 7.5z"
                   stroke-width="1"
@@ -220,12 +221,14 @@
           ></div>
         </figure>
 
-        <!-- Dark overlay that applies to the entire section (same on mobile and large screens) -->
-        <div class="absolute inset-0 md:bg-black md:opacity-50"></div>
-
-        <!-- Content on top of the image -->
+        <!-- Dark overlay that is lighter on smaller screens -->
         <div
-          class="flex flex-col absolute inset-0 items-center justify-center text-center"
+          class="absolute inset-0 bg-black opacity-30 md:opacity-50 z-10"
+        ></div>
+
+        <!-- Content on top of the image, with higher z-index to appear above overlay -->
+        <div
+          class="flex flex-col absolute inset-0 items-center justify-center text-center z-20"
         >
           <h1
             class="text-slate-100 text-4xl md:text-6xl lg:text-7xl font-semibold text-center w-full lg:w-[70%]"
@@ -283,7 +286,7 @@
           <div class="h-full flex justify-center items-center">
             <!-- Adding an <img> for SEO and accessibility -->
             <div
-              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/cor_baietii.jpg')] bg-cover bg-center rounded-lg mt-4 md:mt-6 transition duration-300 ease-in-out hover:scale-105"
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/cor_baietii.jpg')] bg-cover bg-center rounded-lg mt-4 md:mt-6"
             ></div>
           </div>
         </div>
@@ -293,7 +296,7 @@
           <!-- First Image: Grup Fete -->
           <div class="flex flex-col justify-center gap-4">
             <div
-              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/grup_fete.jpg')] bg-cover bg-center rounded-lg max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/grup_fete.jpg')] bg-cover bg-center rounded-lg"
               role="img"
               aria-label="Grupul Fetelor"
             ></div>
@@ -303,14 +306,14 @@
           <div class="flex flex-col justify-center gap-4">
             <!-- Smaller Image: Traducere -->
             <div
-              class="w-full h-[150px] md:h-[200px] bg-[url('./Images/traducere.jpg')] bg-cover bg-center rounded-lg max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              class="w-full h-[150px] md:h-[200px] bg-[url('./Images/traducere.jpg')] bg-cover bg-center rounded-lg"
               role="img"
               aria-label="Traducere"
             ></div>
 
             <!-- Larger Image: Cor Fete -->
             <div
-              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/cor_fete.jpg')] bg-cover bg-center rounded-lg max-w-xs transition duration-300 ease-in-out hover:scale-105"
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/cor_fete.jpg')] bg-cover bg-center rounded-lg"
               role="img"
               aria-label="Corul Fetelor"
             ></div>
@@ -326,7 +329,7 @@
       <!-- Dark Overlay -->
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <h2
-        class="relative text-white py-12 text-center text-4xl sm:text-5xl shadows-into-light-regular"
+        class="relative md:text-white text-black py-12 text-center text-4xl sm:text-5xl shadows-into-light-regular"
       >
         Ce credem noi?
       </h2>
@@ -340,17 +343,17 @@
             class="swiper-slide flex flex-col backdrop-blur-sm bg-black/30 p-5"
           >
             <h4 class="text-lg pb-5 font-semibold text-[#f39c12]"># Biblia</h4>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Noi credem în cele șaizeci și șase de cărți ale Vechiului și
               Noului Testament, ca fiind Cuvântul lui Dumnezeu, înregistrarea
               completă a dezvăluirii de sine a lui Dumnezeu pentru omenire.
             </p>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Oameni diferiți, în timp ce au scris într-un stil propriu, au fost
               insuflați supranatural de Duhul Sfânt pentru a scrie cuvintele lui
               Dumnezeu, infailibile în scrierile originale.
             </p>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Prin urmare, cei care se dedică studierii textului biblic în mod
               literal, ținând cont de genul scrierii și de contextul
               socio-istorico-gramatical, pot înțelege Cuvântul lui Dumnezeu.
@@ -366,12 +369,12 @@
             <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
               # Dumnezeu Tatăl
             </h4>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Noi credem că Dumnezeu Tatăl a creat toate lucrurile precum este
               scris în cartea Genezei, pentru slava Lui în conformitate cu voia
               Lui (Apocalipsa 4:11), prin Fiul Său, Isus Cristos.
             </p>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               El susține toate lucrurile prin Cuvântul puterii și harului Său,
               manifestând conducerea suverană peste toată creația, purtare de
               grijă și har (Coloseni 1:17, Evrei 1:3).
@@ -384,12 +387,12 @@
             <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
               # Dumnezeu Fiul
             </h4>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Noi credem că Isus Cristos, Fiul etern, mișcat de dragoste, în
               conformitate cu voința Tatălui, a luat trup omenesc (Ioan 1:1, 14,
               18).
             </p>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Conceput prin lucrarea miraculoasă a Duhului Sfânt, s-a născut din
               Fecioara Maria. El, fiind pe deplin Dumnezeu și pe deplin om (Ioan
               14:8-9), a trăit o viață fără păcat și a vărsat sângele Său ca
@@ -398,7 +401,7 @@
               vizibil din morți a treia zi și S-a înălțat la ceruri, unde a
               ocupat locul la dreapta Tatălui.
             </p>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               El este acum Cap al Bisericii, Trupul Său, fiind singurul
               Mântuitor și Mijlocitor între Dumnezeu și om. Isus Cristos va
               reveni pe pământ în putere și glorie pentru a împlini misiunea Sa
@@ -412,7 +415,7 @@
             <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
               # Duhul Sfânt
             </h4>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Noi credem că Duhul Sfânt, în tot ceea ce face, Îl glorifică pe
               Domnul Isus Cristos. El condamnă lumea în ceea ce privește
               păcatul, neprihănirea și judecata. El atrage pe cei nerăscumpărați
@@ -420,14 +423,14 @@
               spirituală nouă celui credincios (nașterea din nou), aducându-l în
               unire cu Cristos și cu Trupul lui Cristos, care este Biserica.
             </p>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Duhul Sfânt sfințește credinciosul, îl sigilează, umple,
               călăuzește, instruiește, îi dă pace, echipează, împuternicește,
               locuiește în cel credincios după mântuire, dă daruri spirituale
               credinciosului și Îl ajută să aducă mult rod pentru a-L glorifica
               pe Dumnezeu.
             </p>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Datoria credinciosului este să caute plinătatea Duhului și să fie
               atent să nu “întristeze” Duhul (Efeseni 4:30) sau să “stingă”
               Duhul (1 Tesaloniceni 5:19) printr-un mod de viață ce se
@@ -444,7 +447,7 @@
             <h4 class="text-lg pb-5 font-semibold text-[#f39c12]">
               # Mântuire
             </h4>
-            <p class="text-white text-sm sm:text-base mb-5">
+            <p class="md:text-white text-black text-sm sm:text-base mb-5">
               Mântuirea se găsește în nimeni altul decât în El, Isus Cristos
               (Faptele Apostolilor 4:12). Moartea lui Isus Cristos pe cruce a
               fost plata unică și completă pentru păcatele întregii omeniri,
@@ -463,7 +466,7 @@
               depărtându-se de păcat și aducând roade vizibile în viața de zi cu
               zi (Romani 13:13-14, Galateni 5:22-24, 1 Ioan 2:6).
             </p>
-            <p class="text-white text-sm sm:text-base">
+            <p class="md:text-white text-black text-sm sm:text-base">
               Dar dacă credinciosul se leapădă de credință sau ajunge să
               trăiască deliberat în păcat, renunțând la relația lui cu Dumnezeu,
               deși nimeni nu-i poate judeca mântuirea decât Dumnezeu, biserica
@@ -535,22 +538,22 @@
             </a>
 
             <div
-              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/media_team.jpg')] bg-cover bg-center rounded-lg mt-4 md:mt-6 transition duration-300 ease-in-out hover:scale-105"
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/media_team.jpg')] bg-cover bg-center rounded-lg mt-4 md:mt-6"
             ></div>
           </div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div class="flex flex-col justify-center gap-4">
             <div
-              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/lider1.jpg')] bg-cover bg-center rounded-lg max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/lider1.jpg')] bg-cover bg-center rounded-lg"
             ></div>
           </div>
           <div class="flex flex-col justify-center gap-4">
             <div
-              class="w-full h-[150px] md:h-[200px] bg-[url('./Images/lider2.jpg')] bg-cover bg-center rounded-lg max-w-xs transition duration-300 ease-in-out hover:scale-110"
+              class="w-full h-[150px] md:h-[200px] bg-[url('./Images/lider2.jpg')] bg-cover bg-center rounded-lg"
             ></div>
             <div
-              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/lider4.jpg')] bg-cover rounded-lg max-w-xs transition duration-300 ease-in-out hover:scale-105"
+              class="w-full h-[250px] md:h-[400px] bg-[url('./Images/lider4.jpg')] bg-cover rounded-lg"
             ></div>
           </div>
         </div>
@@ -595,7 +598,7 @@
               <!-- Second div (now ordered first on large screens) -->
               <div class="flex flex-col justify-center gap-4 lg:order-first">
                 <div
-                  class="w-full h-[200px] bg-[url('./Images/ajutorare_team.jpeg')] bg-cover bg-center rounded-lg transition duration-300 ease-in-out hover:scale-105"
+                  class="w-full h-[200px] bg-[url('./Images/ajutorare_team.jpeg')] bg-cover bg-center rounded-lg"
                 ></div>
                 <div class="w-fullw-full h-[250px] md:h-[400px]">
                   <video
@@ -729,7 +732,7 @@
                             <img
                               class="max-w-xs transition duration-300 ease-in-out hover:scale-110"
                               src="./Images/responsabil_ajutoare.jpeg"
-                              alt="Toader Gorda"
+                              alt="Onciul Anatolii"
                             />
                           </div>
                           <h2 class="text-xl font-semibold text-center pt-2">
@@ -748,7 +751,7 @@
                 </div>
 
                 <div
-                  class="w-full h-[250px] md:h-[400px] bg-[url('./Images/ajutorare.jpeg')] bg-cover bg-center rounded-lg mt-4 md:mt-6 transition duration-300 ease-in-out hover:scale-105"
+                  class="w-full h-[250px] md:h-[400px] bg-[url('./Images/ajutorare.jpeg')] bg-cover bg-center rounded-lg mt-4 md:mt-6"
                 ></div>
               </div>
             </div>
