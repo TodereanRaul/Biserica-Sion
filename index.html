@@ -12,10 +12,7 @@
       name="keywords"
       content="biserica ucraineană, Muntele Sionului, Bruxelles, servicii divine, comunitate creștină, rugăciune"
     />
-    <link
-      rel="canonical"
-      href="https://www.bisericamuntelesionului.be/index.html"
-    />
+    <link rel="canonical" href="https://www.bisericamuntelesionului.be" />
     <link rel="icon" href="./Images/LOGO BUMS - 1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,7 +44,7 @@
       property="og:image"
       content="https://www.bisericamuntelesionului.be/Images/LOGO BUMS - 1.png"
     />
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://bisericamuntelesionului.com" />
     <meta property="og:type" content="website" />
 
     <!-- Italic Font -->
@@ -73,20 +70,21 @@
           "postalCode": "1090",
           "addressCountry": "BE"
         },
-        "telephone": "",
-        "url": ""
+
+        "url": "https://bisericamuntelesionului.com", // Replace with actual URL
+        "description": "Biserica Ucraineană Muntele Sionului is a community church serving the local Ukrainian community in Jette, Belgium."
       }
     </script>
   </head>
   <body>
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
     <header
       id="navbar"
-      class="navbar w-full fixed top-0 z-50 px-5 transition-colors duration-300 bg-transparent"
+      class="w-full fixed top-0 z-50 px-5 transition-colors duration-300 bg-transparent"
       style="background-color: rgba(0, 0, 0, 0)"
     >
       <div class="flex justify-between py-3">
-        <a class="w-[250px] my-2" href="./index.html">
+        <a class="w-[350px] md:w-[250px] my-2 me-2" href="#acasa">
           <img src="./Images/LOGO BUMS  - 4.png" class="w-full h-full" />
         </a>
         <div class="container justify-end flex items-center">
@@ -106,7 +104,7 @@
 
               <div class="flex justify-center items-center">
                 <a
-                  class="px-8 py-2 cursor-pointer live-btn hideElements rounded-md text-center transition duration-300 ease-in-out"
+                  class="px-8 py-2 cursor-pointer live-btn hideElements rounded-md text-center"
                   style="background-color: #e72929"
                   href="https://www.youtube.com/@bisericaucraineanamunteles9760"
                   >Live</a
@@ -160,7 +158,7 @@
             style="background-color: rgba(0, 0, 0, 0.8); z-index: 60"
           >
             <button
-              class="absolute top-4 right-4 p-3 cursor-pointer close-btn bg-black rounded-full"
+              class="absolute top-3 right-4 p-3 cursor-pointer bg-black rounded-full"
               onclick="hideSidebar()"
             >
               <svg
@@ -207,13 +205,13 @@
     </header>
 
     <section id="acasa" aria-labelledby="hero-heading">
-      <div id="content" class="main relative">
+      <div id="content" class="relative">
         <!-- Background image with dark overlay -->
         <figure class="relative w-full h-screen">
           <img
             src="./Images/biserica-inside.jpg"
-            alt="Interior of the Romanian-Ukrainian Christian Church"
-            class="w-full h-full object-cover hidden lg:block"
+            alt="Biserica Crestina Ucraineană in Interior"
+            class="w-full h-full object-cover block"
           />
           <div
             class="absolute inset-0 bg-cover bg-center lg:bg-fixed"
@@ -222,9 +220,7 @@
         </figure>
 
         <!-- Dark overlay that is lighter on smaller screens -->
-        <div
-          class="absolute inset-0 bg-black opacity-30 md:opacity-50 z-10"
-        ></div>
+        <div class="absolute inset-0 md:bg-black md:opacity-50 z-10"></div>
 
         <!-- Content on top of the image, with higher z-index to appear above overlay -->
         <div
@@ -247,7 +243,7 @@
             class="mt-5 py-2 px-5 rounded-md font-semibold hover:before:bg-[#f39c12] border border-[#f39c12] relative bg-transparent transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-[#f39c12] before:transition-all before:duration-500 hover:before:left-0 hover:before:w-full before:rounded-md flex items-center gap-2 group"
           >
             <span
-              class="relative z-10 text-[#f39c12] group-hover:text-white transition-colors duration-300"
+              class="relative text-[#f39c12] group-hover:text-white transition-colors duration-300"
             >
               Programul Bisericii
             </span>

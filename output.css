@@ -1119,8 +1119,8 @@ input:checked + .toggle-bg {
   top: 0px;
 }
 
-.top-4 {
-  top: 1rem;
+.top-3 {
+  top: 0.75rem;
 }
 
 .z-10 {
@@ -1179,6 +1179,10 @@ input:checked + .toggle-bg {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.me-2 {
+  margin-inline-end: 0.5rem;
 }
 
 .ms-auto {
@@ -1290,10 +1294,6 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
-.h-12 {
-  height: 3rem;
-}
-
 .max-h-full {
   max-height: 100%;
 }
@@ -1334,16 +1334,16 @@ input:checked + .toggle-bg {
   width: 250px;
 }
 
+.w-\[350px\] {
+  width: 350px;
+}
+
 .w-\[80\%\] {
   width: 80%;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-12 {
-  width: 3rem;
 }
 
 .max-w-2xl {
@@ -1523,16 +1523,16 @@ input:checked + .toggle-bg {
   scroll-behavior: smooth;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
 
 .rounded-md {
   border-radius: 0.375rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-e-lg {
@@ -1662,11 +1662,6 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / 0.5);
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 36 36 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\/Images\/ajutorare\.jpeg\'\)\] {
   background-image: url('./Images/ajutorare.jpeg');
 }
@@ -1717,25 +1712,6 @@ input:checked + .toggle-bg {
 
 .bg-\[url\(\'\.\/Images\/traducere\.jpg\'\)\] {
   background-image: url('./Images/traducere.jpg');
-}
-
-.bg-gradient-to-t {
-  background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.from-black {
-  --tw-gradient-from: #000000 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.via-transparent {
-  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), transparent var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
-.to-black {
-  --tw-gradient-to: #000000 var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -1938,6 +1914,11 @@ input:checked + .toggle-bg {
   color: rgb(243 156 18 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(28 100 242 / var(--tw-text-opacity));
@@ -1983,11 +1964,6 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .opacity-0 {
   opacity: 0;
 }
@@ -1998,18 +1974,6 @@ input:checked + .toggle-bg {
 
 .opacity-50 {
   opacity: 0.5;
-}
-
-.opacity-30 {
-  opacity: 0.3;
-}
-
-.opacity-10 {
-  opacity: 0.1;
-}
-
-.opacity-40 {
-  opacity: 0.4;
 }
 
 .shadow {
@@ -2039,11 +2003,6 @@ input:checked + .toggle-bg {
 
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-}
-
-.backdrop-filter {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -2092,67 +2051,65 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
-
 /* Preloader styles */
 
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff;
-  /* Background color while loading */
-  display: flex;
+  background: #ffffff; 
+  /* display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-}
+} */
 
-#preloader.hidden {
+/* Disable interaction with the hidden preloader */
+
+/* #preloader.hidden {
   opacity: 0;
-  pointer-events: none;
-  /* Disable interaction with the hidden preloader */
-}
+  pointer-events: none; 
+} */
 
-#preloader::before {
+/* #preloader::before {
   content: "";
   width: 120px;
   height: 20px;
   background: linear-gradient(#000 0 0) 0/0% no-repeat #ddd;
   animation: l1 2s infinite linear;
 }
-
 @keyframes l1 {
   100% {
     background-size: 100%;
   }
-}
+} */
 
 /* Hide content until the page is fully loaded */
 
-body.loading #content {
+/* body.loading #content {
   display: none;
-}
+} */
 
 /* Fade-in content for smooth transition */
 
-body.loaded #content {
-  opacity: 0;
-  transition: opacity 1s ease;
-  /* Smooth transition for content */
-}
+/* Smooth transition for content */
 
-body.loaded #content.show {
+/* body.loaded #content {
+  opacity: 0;
+  transition: opacity 1s ease; 
+} */
+
+/* body.loaded #content.show {
   opacity: 1;
-}
+} */
 
 /* Hide content until the page is fully loaded */
 
-body.loading #content {
+/* body.loading #content {
   display: none;
-}
+} */
 
 .shadows-into-light-regular {
   font-family: "Shadows Into Light", cursive;
@@ -2162,13 +2119,6 @@ body.loading #content {
 
 body {
   font-family: "Merr", sans-serif;
-}
-
-.navbar {
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  left: 0;
 }
 
 .live-btn {
@@ -2190,11 +2140,6 @@ body {
   height: 100vh;
   width: 250px;
   padding: 20px 50px;
-  z-index: 999;
-  background-color: rgba(12, 58, 77, 0.7);
-  -webkit-backdrop-filter: blur(20%);
-          backdrop-filter: blur(20%);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   transition: 0.75s ease-out;
   display: none;
   flex-direction: column;
@@ -2207,14 +2152,6 @@ body {
 
 .menu-btn {
   display: none;
-}
-
-/* CLOSE BTN */
-
-.close-btn {
-  position: absolute;
-  top: 7px;
-  right: 20px;
 }
 
 @media (max-width: 800px) {
@@ -2234,33 +2171,12 @@ body {
   }
 }
 
-/* START 'LIDERI DE TINERET' */
-
-/* END 'LIDERI DE TINERET' */
-
-/* crez.html */
-
-.main {
-  width: 100%;
-  height: 100vh;
-}
-
 video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-/* .content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 /* SWIPER */
 
@@ -2281,11 +2197,6 @@ video {
   /* Set slide width to 100% */
   overflow: hidden;
   /* Hide overflow */
-}
-
-.swiper-container {
-  overflow-x: hidden;
-  /* Hide horizontal overflow */
 }
 
 .before\:absolute::before {
@@ -2355,12 +2266,6 @@ video {
 .before\:duration-500::before {
   content: var(--tw-content);
   transition-duration: 500ms;
-}
-
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-110:hover {
@@ -2657,6 +2562,10 @@ video {
     height: 400px;
   }
 
+  .md\:w-\[250px\] {
+    width: 250px;
+  }
+
   .md\:w-\[70\%\] {
     width: 70%;
   }
@@ -2723,10 +2632,6 @@ video {
 
   .lg\:order-first {
     order: -9999;
-  }
-
-  .lg\:block {
-    display: block;
   }
 
   .lg\:w-9\/12 {

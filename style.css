@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
 
 /* Preloader styles */
-#preloader {
+/* #preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff; /* Background color while loading */
-  display: flex;
+  background: #ffffff; 
+  /* display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-}
+} */
 
-#preloader.hidden {
+/* Disable interaction with the hidden preloader */
+/* #preloader.hidden {
   opacity: 0;
-  pointer-events: none; /* Disable interaction with the hidden preloader */
-}
+  pointer-events: none; 
+} */
 
-#preloader::before {
+/* #preloader::before {
   content: "";
   width: 120px;
   height: 20px;
@@ -35,27 +35,27 @@
   100% {
     background-size: 100%;
   }
-}
+} */
 
 /* Hide content until the page is fully loaded */
-body.loading #content {
+/* body.loading #content {
   display: none;
-}
+} */
 
-/* Fade-in content for smooth transition */
-body.loaded #content {
+/* Fade-in content for smooth transition */ /* Smooth transition for content */
+/* body.loaded #content {
   opacity: 0;
-  transition: opacity 1s ease; /* Smooth transition for content */
-}
+  transition: opacity 1s ease; 
+} */
 
-body.loaded #content.show {
+/* body.loaded #content.show {
   opacity: 1;
-}
+} */
 
 /* Hide content until the page is fully loaded */
-body.loading #content {
+/* body.loading #content {
   display: none;
-}
+} */
 
 .shadows-into-light-regular {
   font-family: "Shadows Into Light", cursive;
@@ -65,13 +65,6 @@ body.loading #content {
 
 body {
   font-family: "Merr", sans-serif;
-}
-
-.navbar {
-  position: fixed;
-  z-index: 50;
-  top: 0;
-  left: 0;
 }
 
 .live-btn {
@@ -92,10 +85,7 @@ body {
   height: 100vh;
   width: 250px;
   padding: 20px 50px;
-  z-index: 999;
-  background-color: rgba(12, 58, 77, 0.7);
-  backdrop-filter: blur(20%);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+
   transition: 0.75s ease-out;
   display: none;
   flex-direction: column;
@@ -107,12 +97,6 @@ body {
 /* MENU BTN SHOW */
 .menu-btn {
   display: none;
-}
-/* CLOSE BTN */
-.close-btn {
-  position: absolute;
-  top: 7px;
-  right: 20px;
 }
 
 @media (max-width: 800px) {
@@ -131,31 +115,11 @@ body {
   }
 }
 
-/* START 'LIDERI DE TINERET' */
-
-/* END 'LIDERI DE TINERET' */
-
-/* crez.html */
-.main {
-  width: 100%;
-  height: 100vh;
-}
-
 video {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-/* .content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 /* SWIPER */
 
@@ -187,8 +151,4 @@ video {
 .swiper-slide {
   width: 100%; /* Set slide width to 100% */
   overflow: hidden; /* Hide overflow */
-}
-
-.swiper-container {
-  overflow-x: hidden; /* Hide horizontal overflow */
 }
