@@ -1,24 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Ensure the content is hidden initially
-//   document.body.classList.add("loading");
-
-//   window.addEventListener("load", function () {
-//     // Add a delay before removing the preloader
-//     setTimeout(function () {
-//       // Fade out the preloader
-//       var preloader = document.getElementById("preloader");
-//       preloader.classList.add("hidden");
-
-//       // Show the content with a fade-in effect
-//       document.body.classList.remove("loading");
-//       document.body.classList.add("loaded");
-//       setTimeout(function () {
-//         document.getElementById("content").classList.add("show");
-//       }, 50); // Short delay to ensure smooth transition
-//     }, 1000); // 3000 milliseconds = 3 seconds delay
-//   });
-// });
-
 function showSidebar() {
   const sidebar = document.querySelector(".sidebar");
   //   console.log("Sidebar Element: ", sidebar); // Debugging line
@@ -78,6 +57,14 @@ var swiper = new Swiper(".swiper", {
       spaceBetween: 10,
     },
   },
+});
+
+const swiperButtons = document.querySelectorAll(
+  ".swiper-button-next, .swiper-button-prev"
+);
+
+swiperButtons.forEach((button) => {
+  button.style.padding = "50px"; // Increase padding for larger clickable area
 });
 
 document
@@ -143,13 +130,10 @@ const video2 = document.getElementById("video2");
 
 // Add event listener to play video on click
 video1.addEventListener("click", function () {
-  console.log("Video 1 clicked"); // Debugging: Check if click event is working
   if (video1.paused) {
     video1.play();
-    console.log("Video 1 playing"); // Debugging: Check if play function is triggered
   } else {
     video1.pause();
-    console.log("Video 1 paused"); // Debugging: Check if pause function is triggered
   }
 });
 
@@ -157,9 +141,7 @@ video2.addEventListener("click", function () {
   console.log("Video 2 clicked"); // Debugging: Check if click event is working
   if (video2.paused) {
     video2.play();
-    console.log("Video 2 playing"); // Debugging: Check if play function is triggered
   } else {
     video2.pause();
-    console.log("Video 2 paused"); // Debugging: Check if pause function is triggered
   }
 });
